@@ -1,0 +1,18 @@
+.home {
+  display: grid;
+  height: 100vh;
+
+  position: relative;
+
+  &__messages {
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 20%;
+
+    span {
+      display: block;
+      font-size: 12rem;
+    }
+  }
+}
