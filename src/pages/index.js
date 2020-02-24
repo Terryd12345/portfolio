@@ -11,10 +11,15 @@ export default () => (
         <a
           href="https://www.linkedin.com/in/terence-denning-0a89a7122/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://github.com/tden123" target="_blank">
+        <a
+          href="https://github.com/tden123"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
