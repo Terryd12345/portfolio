@@ -1,5 +1,7 @@
-@import "./base/base.scss";
+@import "./base/typeography";
 
-@import "./pages/home.scss";
+@import "./base/base";
 
-@import "./components/header.scss";
+@import "./pages/index";
+
+@import "./components/header";

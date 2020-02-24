@@ -1,0 +1,28 @@
+.home {
+  text-align: center;
+  position: relative;
+  top: 25rem;
+  &__header {
+    font-size: 10rem;
+  }
+  &__subheader {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+  }
+  &__social {
+    margin: 8rem 0;
+    svg {
+      font-size: 4rem;
+      margin: 0 2rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__navigation {
+    font-size: 4rem;
+    span {
+      margin: 0 3rem;
+      cursor: pointer;
+    }
+  }
+}
