@@ -1,3 +1,115 @@
 .projects {
-    height: 100vh;
+  min-height: 100vh;
+  padding: 30rem 0;
+  background-color: rgb(236, 236, 236);
+
+  &__container {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  &__mysailboatfinder {
+    text-align: center;
+
+    &--header {
+      display: block;
+      font-size: 5rem;
+      text-decoration: none;
+    }
+
+    &--description {
+      font-size: 2.2rem;
+      color: rgb(58, 58, 58);
+      text-align: left;
+    }
+
+    &--github {
+      font-size: 5rem;
+      margin: 4rem 0;
+      color: rgb(27, 27, 27);
+    }
+
+    &__features {
+      margin: 5rem 0;
+      text-align: left;
+
+      &--header {
+        font-size: 2.2rem;
+        color: rgb(58, 58, 58);
+      }
+
+      &--list {
+        position: relative;
+        left: 3%;
+        margin-top: 2rem;
+
+        li {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__gifs {
+      margin: 5rem auto;
+      height: 72rem;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 10% 90%;
+
+      &__tabs {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        text-align: center;
+        border: 1px solid rgb(179, 179, 179);
+        border-bottom: none;
+
+        button {
+          cursor: pointer;
+          text-decoration: none;
+          border: none;
+          height: 100%;
+
+          &:hover {
+            background-color: white;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      &--auth {
+        background-image: url("./images/gifs/auth.gif");
+        background-size: contain;
+      }
+
+      &--create {
+        background-image: url("./images/gifs/create.gif");
+        background-size: contain;
+      }
+
+      &--messaging {
+        background-image: url("./images/gifs/messaging.gif");
+        background-size: contain;
+      }
+
+      &--save {
+        background-image: url("./images/gifs/save.gif");
+        background-size: contain;
+      }
+
+      &--filter {
+        background-image: url("./images/gifs/filter.gif");
+        background-size: contain;
+      }
+
+      &--responsive {
+        background-image: url("./images/gifs/responsive.gif");
+        background-size: contain;
+      }
+    }
+  }
 }

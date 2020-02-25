@@ -2,7 +2,7 @@
   height: 100vh;
   max-width: 120rem;
   margin: auto;
-  padding: 20rem 0;
+  padding-top: 30rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,12 +16,12 @@
     &--header {
       font-size: 5rem;
       margin-bottom: 4rem;
-      text-align: center;
     }
 
     &--content {
+      max-width: 90%;
       font-size: 2.2rem;
-      font-weight: 100;
+      color: rgb(58, 58, 58);
     }
   }
 

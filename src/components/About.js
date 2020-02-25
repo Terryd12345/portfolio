@@ -15,15 +15,14 @@ const About = () => {
         <div className="about__description--header">About Me</div>
         <div className="about__description--content">
           <p>
-            Hello, my name is Terence I am a software developer from Melbourne,
+            Hello, my name is Terence I am a Software Engineer from Melbourne,
             Australia. I am primarily focused on the web stack with an emphasis
             on HTML, CSS, Javascript, React and NodeJS.
           </p>
           <br />
           <p>
-            I am a full stack developer with an interest in everything from
-            digital marketing, design, product development and software
-            engineering.
+            I have an interest in everything web related from digital marketing,
+            design, product development, security to software engineering.
           </p>
         </div>
       </div>

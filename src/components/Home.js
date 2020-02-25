@@ -13,14 +13,17 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon
+            className="home__social--linkedin"
+            icon={faLinkedin}
+          />
         </a>
         <a
           href="https://github.com/tden123"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon className="home__social--github" icon={faGithub} />
         </a>
       </div>
       <div className="home__navigation">
