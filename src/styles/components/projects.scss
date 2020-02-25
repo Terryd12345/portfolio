@@ -3,9 +3,17 @@
   padding: 30rem 0;
   background-color: rgb(236, 236, 236);
 
+  @media (max-width: 1200px) {
+    padding: 15rem 0;
+  }
+
   &__container {
     max-width: 50%;
     margin: 0 auto;
+
+    @media (max-width: 800px) {
+      max-width: 80%;
+    }
   }
 
   &__mysailboatfinder {
@@ -15,6 +23,10 @@
       display: block;
       font-size: 5rem;
       text-decoration: none;
+
+      @media (max-width: 800px) {
+        font-size: 3rem;
+      }
     }
 
     &--description {
@@ -51,10 +63,14 @@
 
     &__gifs {
       margin: 5rem auto;
-      height: 72rem;
+      height: 28.1vw;
       width: 100%;
       display: grid;
       grid-template-rows: 10% 90%;
+
+      @media (max-width: 800px) {
+        height: 45.2vw;
+      }
 
       &__tabs {
         display: grid;
@@ -71,6 +87,15 @@
           border: none;
           height: 100%;
 
+          p {
+            @media (max-width: 800px) {
+              font-size: 1rem;
+            }
+            @media (max-width: 400px) {
+              font-size: 0.6rem;
+            }
+          }
+
           &:hover {
             background-color: white;
           }
@@ -84,6 +109,10 @@
       &--auth {
         background-image: url("./images/gifs/auth.gif");
         background-size: contain;
+
+        @media (max-width: 1000px) {
+          font-size: 0.1rem;
+        }
       }
 
       &--create {

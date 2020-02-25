@@ -1,5 +1,6 @@
 .home {
   text-align: center;
+  padding: 0 15rem;
   padding-top: 35rem;
   height: 100vh;
   color: white;
@@ -13,14 +14,36 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 700px) {
+    padding: 0 5rem;
+    padding-top: 35rem;
+  }
+
   &__header {
     font-size: 10rem;
     letter-spacing: 1rem;
+
+    @media (max-width: 1000px) {
+      font-size: 6rem;
+      margin-bottom: 5rem;
+    }
+
+    @media (max-width: 340px) {
+      font-size: 4rem;
+      margin-bottom: 5rem;
+    }
   }
+
   &__subheader {
     font-size: 5rem;
     letter-spacing: 1.5rem;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+    }
   }
+
   &__social {
     margin: 5rem 0;
 
@@ -45,6 +68,11 @@
       &:hover {
         border-bottom: 1px solid white;
       }
+    }
+
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

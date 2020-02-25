@@ -44,16 +44,24 @@ const Projects = () => {
             </ul>
             <div className="projects__mysailboatfinder__gifs">
               <div className="projects__mysailboatfinder__gifs__tabs">
-                <button onClick={() => setCurrGif("auth")}>Auth</button>
+                <button onClick={() => setCurrGif("auth")}>
+                  <p>Auth</p>
+                </button>
                 <button onClick={() => setCurrGif("messaging")}>
-                  Messaging
+                  <p>Messaging</p>
+                </button>
+                <button onClick={() => setCurrGif("create")}>
+                  <p>Create</p>
+                </button>
+                <button onClick={() => setCurrGif("save")}>
+                  <p>Save</p>
                 </button>
                 <button onClick={() => setCurrGif("responsive")}>
-                  Responsive
+                  <p>Responsive</p>
                 </button>
-                <button onClick={() => setCurrGif("create")}>Create</button>
-                <button onClick={() => setCurrGif("save")}>Save</button>
-                <button onClick={() => setCurrGif("filter")}>Filter</button>
+                <button onClick={() => setCurrGif("filter")}>
+                  <p>Filter</p>
+                </button>
               </div>
               <div
                 className={`projects__mysailboatfinder__gifs--${currGif}`}

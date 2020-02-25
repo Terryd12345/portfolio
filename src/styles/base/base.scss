@@ -9,4 +9,8 @@
 html {
   font-size: 62.5%;
   font-family: $main-font;
+
+  @media (max-width: 1400px) {
+    font-size: 50%;
+  }
 }
