@@ -47,7 +47,7 @@ const Projects = () => {
           (React with Redux for State Management) and on the backend,{" "}
           <b>NodeJS</b> (ExpressJS) with a cloud based <b>MongoDB</b> database
           (MongoDB Atlas). The application is hosted on a Ubuntu Linode running
-          NGINX.
+          <b>NGINX</b>.
         </p>
 
         <div className="projects__mysailboatfinder__features">
@@ -56,7 +56,9 @@ const Projects = () => {
           </p>
           <ul className="projects__mysailboatfinder__features--list">
             <li>Messaging</li>
-            <li>Authentication and Authorization using JWT</li>
+            <li>
+              Authentication and Authorization using <b>Json Web Tokens</b>
+            </li>
             <li>Save Posts</li>
             <li>CRUD</li>
             <li>Responsive Design</li>

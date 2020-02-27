@@ -45,15 +45,9 @@ const About = () => {
             Since completing my degree, I have shifted my focus toward{" "}
             <b>Web Development</b> as that is my true passion. I am primarily
             focused on developing my skills in{" "}
-            <b>HTML, CSS, Javascript, React and NodeJS</b>. I have also recently
-            begun working toward the <b>AWS Certified Developer Associate</b>{" "}
-            certificate as I am always looking to broaden my skillset.
-          </p>
-          <br />
-          <p>
-            {" "}
-            I have an interest in everything web related from digital marketing,
-            design, product development, security to software engineering.{" "}
+            <b>HTML, CSS, Javascript, React and NodeJS</b>. I have an interest
+            in everything web related from digital marketing, design, product
+            development, security to software engineering.{" "}
             <b>
               I aspire to be as close to a "full stack" developer as possible.
             </b>
