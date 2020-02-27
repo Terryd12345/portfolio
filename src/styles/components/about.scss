@@ -1,33 +1,15 @@
 .about {
-  height: 100vh;
   max-width: 120rem;
+  min-height: 100vh;
   margin: 0 auto;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 70% 30%;
-  gap: 5rem;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 20rem 0;
+  padding: 10rem;
 
   & > div {
     height: 100%;
-  }
-
-  @media (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10rem 5rem;
-    text-align: center;
-    height: auto;
-
-    div {
-      margin: 2rem 0;
-    }
   }
 
   &__description {
@@ -44,27 +26,9 @@
     }
 
     &--content {
-      max-width: 90%;
       font-size: 2.2rem;
       color: rgb(58, 58, 58);
       text-align: left;
-    }
-  }
-
-  &__img {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-    background-image: url("./images/profile.jpg");
-    background-size: cover;
-
-    @media (max-width: 1200px) {
-      height: 50rem;
-      width: 50rem;
-    }
-
-    @media (max-width: 500px) {
-      height: 30rem;
-      width: 30rem;
     }
   }
 

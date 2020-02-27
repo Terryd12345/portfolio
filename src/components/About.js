@@ -17,7 +17,7 @@ const About = () => {
           <p>
             Hello, my name is Terence I am a Software Engineer from Melbourne,
             Australia. I am primarily focused on the web stack with an emphasis
-            on HTML, CSS, Javascript, React and NodeJS.
+            on: HTML, CSS, Javascript, React and NodeJS.
           </p>
           <br />
           <p>
@@ -26,7 +26,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="about__img"></div>
       <div className="about__skills">
         <FontAwesomeIcon className="about__skills--html" icon={faHtml5} />
         <FontAwesomeIcon className="about__skills--css" icon={faCss3Alt} />

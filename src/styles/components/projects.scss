@@ -1,23 +1,15 @@
 .projects {
+  max-width: 120rem;
   min-height: 100vh;
-  padding: 20rem 0;
-  background-color: rgb(236, 236, 236);
+  margin: 0 auto;
+  padding: 10rem;
 
-  @media (max-width: 1200px) {
-    padding: 15rem 0;
-  }
-
-  &__container {
-    max-width: 50%;
-    margin: 0 auto;
-
-    @media (max-width: 800px) {
-      max-width: 80%;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   &__mysailboatfinder {
     text-align: center;
+    width: 100%;
 
     &--header {
       display: block;
@@ -63,13 +55,12 @@
 
     &__gifs {
       margin: 5rem auto;
-      height: 28.1vw;
       width: 100%;
       display: grid;
       grid-template-rows: 10% 90%;
 
-      @media (max-width: 800px) {
-        height: 45.2vw;
+      img {
+        width: 100%;
       }
 
       &__tabs {
@@ -104,40 +95,6 @@
             outline: none;
           }
         }
-      }
-
-      &--auth {
-        background-image: url("./images/gifs/auth.gif");
-        background-size: contain;
-
-        @media (max-width: 1000px) {
-          font-size: 0.1rem;
-        }
-      }
-
-      &--create {
-        background-image: url("./images/gifs/create.gif");
-        background-size: contain;
-      }
-
-      &--messaging {
-        background-image: url("./images/gifs/messaging.gif");
-        background-size: contain;
-      }
-
-      &--save {
-        background-image: url("./images/gifs/save.gif");
-        background-size: contain;
-      }
-
-      &--filter {
-        background-image: url("./images/gifs/filter.gif");
-        background-size: contain;
-      }
-
-      &--responsive {
-        background-image: url("./images/gifs/responsive.gif");
-        background-size: contain;
       }
     }
   }
