@@ -16,6 +16,8 @@
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 
+    line-height: 5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +25,14 @@
     &--header {
       font-size: 5rem;
       margin-bottom: 4rem;
+    }
+
+    &--opendrop {
+      text-decoration: none;
+    }
+
+    &--misc {
+      text-decoration: none;
     }
 
     &--content {

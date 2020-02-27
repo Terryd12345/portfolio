@@ -2,6 +2,9 @@
   text-align: center;
   height: 100vh;
   color: white;
+  z-index: 3;
+
+  position: relative;
 
   background-image: linear-gradient(
       to bottom,

@@ -15,14 +15,48 @@ const About = () => {
         <div className="about__description--header">About Me</div>
         <div className="about__description--content">
           <p>
-            Hello, my name is Terence I am a Software Engineer from Melbourne,
-            Australia. I am primarily focused on the web stack with an emphasis
-            on: HTML, CSS, Javascript, React and NodeJS.
+            Hello, my name is Terence. I am a <b>Software Developer</b> from
+            Melbourne, Australia. I graduated from the University of Melbourne
+            with a <b>Bachelor of Science (Software and Computer Systems)</b>.
+            During my degree I spent summers and winters working on an open
+            source application{" "}
+            <a
+              className="about__description--opendrop"
+              href="https://github.com/jdber1/opendrop"
+              target="__blank"
+            >
+              OpenDrop
+            </a>{" "}
+            for the Department of Chemical Engineering. I was also involved in
+            the <b>University of Melbourne Information Security Club</b> where I
+            volunteered as a commitee member, helping run weekly events as well
+            as developing the original club{" "}
+            <a
+              className="about__description--misc"
+              href="https://umisc.herokuapp.com"
+              target="__blank"
+            >
+              website
+            </a>
+            .
           </p>
           <br />
           <p>
+            Since completing my degree, I have shifted my focus toward{" "}
+            <b>Web Development</b> as that is my true passion. I am primarily
+            focused on developing my skills in{" "}
+            <b>HTML, CSS, Javascript, React and NodeJS</b>. I have also recently
+            begun working toward the <b>AWS Certified Developer Associate</b>{" "}
+            certificate as I am always looking to broaden my skillset.
+          </p>
+          <br />
+          <p>
+            {" "}
             I have an interest in everything web related from digital marketing,
-            design, product development, security to software engineering.
+            design, product development, security to software engineering.{" "}
+            <b>
+              I aspire to be as close to a "full stack" developer as possible.
+            </b>
           </p>
         </div>
       </div>

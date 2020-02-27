@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  a {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1rem;
+    }
+  }
+}

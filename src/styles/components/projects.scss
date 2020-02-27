@@ -15,6 +15,8 @@
       display: block;
       font-size: 5rem;
       text-decoration: none;
+      color: black;
+      cursor: pointer;
 
       @media (max-width: 800px) {
         font-size: 3rem;
@@ -25,6 +27,7 @@
       font-size: 2.2rem;
       color: rgb(58, 58, 58);
       text-align: left;
+      line-height: 5rem;
     }
 
     &--github {
@@ -59,8 +62,14 @@
       display: grid;
       grid-template-rows: 10% 90%;
 
+      box-shadow: 0rem 4rem 1rem rgba(#000, 0.2);
+      border: none;
+
       img {
         width: 100%;
+        border-radius: 2px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
       }
 
       &__tabs {
@@ -69,8 +78,12 @@
         grid-template-rows: 1fr;
         align-items: center;
         text-align: center;
-        border: 1px solid rgb(179, 179, 179);
-        border-bottom: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        &--active {
+          background-color: white;
+        }
 
         button {
           cursor: pointer;
