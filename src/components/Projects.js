@@ -46,7 +46,7 @@ const Projects = () => {
           <b>HTML</b>, <b>CSS/Sass</b> (Grid and Flexbox), <b>Javascript</b>{" "}
           (React with Redux for State Management) and on the backend,{" "}
           <b>NodeJS</b> (ExpressJS) with a cloud based <b>MongoDB</b> database
-          (MongoDB Atlas). The application is hosted on a Ubuntu Linode running
+          (MongoDB Atlas). The application is hosted on a Ubuntu Linode running{" "}
           <b>NGINX</b>.
         </p>
 
@@ -57,7 +57,7 @@ const Projects = () => {
           <ul className="projects__mysailboatfinder__features--list">
             <li>Messaging</li>
             <li>
-              Authentication and Authorization using <b>Json Web Tokens</b>
+              Authentication and Authorization using Json Web Tokens (JWT)
             </li>
             <li>Save Posts</li>
             <li>CRUD</li>
