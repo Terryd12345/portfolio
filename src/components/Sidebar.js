@@ -1,25 +1,26 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faHome,
+  faFile,
+  faProjectDiagram,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons"
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <a href="#home" className="sidebar__about">
-        <img src="https://img.icons8.com/dotty/80/000000/home.png" alt="home" />
+      <a title="Home" href="#home" className="sidebar__home">
+        <FontAwesomeIcon icon={faHome} />
       </a>
-      <a href="#about" className="sidebar__about">
-        <img src="https://img.icons8.com/ios/50/000000/about.png" alt="about" />
+      <a title="About" href="#about" className="sidebar__about">
+        <FontAwesomeIcon icon={faAddressCard} />
       </a>
-      <a href="#resume" className="sidebar__resume">
-        <img
-          src="https://img.icons8.com/carbon-copy/100/000000/resume.png"
-          alt="resume"
-        />
+      <a title="Resume" href="#resume" className="sidebar__resume">
+        <FontAwesomeIcon icon={faFile} />
       </a>
-      <a href="#projects" className="sidebar__projects">
-        <img
-          src="https://img.icons8.com/wired/64/000000/group-of-projects.png"
-          alt="projects"
-        />
+      <a title="Projects" href="#projects" className="sidebar__projects">
+        <FontAwesomeIcon icon={faProjectDiagram} />
       </a>
     </div>
   )

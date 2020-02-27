@@ -8,6 +8,14 @@
   justify-content: center;
   padding: 10rem;
 
+  @media (max-width: 800px) {
+    padding: 10rem 5rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10rem 2rem;
+  }
+
   & > div {
     height: 100%;
   }
