@@ -1,7 +1,7 @@
 .sidebar {
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 2%;
   transform: translateY(-50%);
 
   display: flex;
@@ -15,17 +15,27 @@
 
   a {
     font-size: 1.3rem;
-    margin: 2rem 0;
+    margin: 4rem 0;
     text-decoration: none;
     color: black;
     cursor: pointer;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    &:hover > * {
+      color: grey;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
 
     svg {
-      font-size: 2rem;
+      font-size: 2.5rem !important;
       margin: 0 auto;
     }
   }

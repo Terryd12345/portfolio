@@ -10,17 +10,21 @@ import {
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <a title="Home" href="#home" className="sidebar__home">
+      <a href="#home" className="sidebar__home">
         <FontAwesomeIcon icon={faHome} />
+        <p>Home</p>
       </a>
-      <a title="About" href="#about" className="sidebar__about">
+      <a href="#about" className="sidebar__about">
         <FontAwesomeIcon icon={faAddressCard} />
+        <p>About</p>
       </a>
-      <a title="Resume" href="#resume" className="sidebar__resume">
+      <a href="#resume" className="sidebar__resume">
         <FontAwesomeIcon icon={faFile} />
+        <p>Resume</p>
       </a>
-      <a title="Projects" href="#projects" className="sidebar__projects">
+      <a href="#projects" className="sidebar__projects">
         <FontAwesomeIcon icon={faProjectDiagram} />
+        <p>Projects</p>
       </a>
     </div>
   )
