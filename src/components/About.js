@@ -17,7 +17,7 @@ const About = () => {
           <p>
             Hello, my name is Terence. I am a <b>Software Developer</b> from
             Melbourne, Australia. I graduated from the University of Melbourne
-            with a <b>Bachelor of Science (Software and Computer Systems)</b>.
+            with a <b>Bachelor of Science (Computing and Software Systems)</b>.
             During my degree I spent summers and winters working on an open
             source application{" "}
             <a
