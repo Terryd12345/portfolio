@@ -37,7 +37,7 @@
 
     &--description {
       font-size: 2.2rem;
-      color: $color-text;
+      color: $color-dark-grey;
       text-align: left;
       line-height: 5rem;
     }
@@ -58,7 +58,7 @@
 
       &--header {
         font-size: 2.2rem;
-        color: $color-text;
+        color: $color-dark-grey;
       }
 
       &--list {
@@ -101,8 +101,14 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
 
+        border-bottom: 2px solid white;
+
         &--active {
-          background-color: white;
+          background-color: white !important;
+
+          p {
+            color: black !important;
+          }
         }
 
         button {
@@ -110,6 +116,8 @@
           text-decoration: none;
           border: none;
           height: 100%;
+          background-color: $color-dark-grey;
+          color: white;
 
           p {
             @media (max-width: 800px) {
@@ -122,6 +130,7 @@
 
           &:hover {
             background-color: white;
+            color: white;
           }
 
           &:focus {

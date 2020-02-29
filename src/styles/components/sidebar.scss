@@ -16,7 +16,7 @@
     left: 0%;
     width: 100%;
 
-    background-color: $color-secondary;
+    background-color: rgb(43, 43, 43);
     padding: 0;
     transform: none;
 
@@ -39,11 +39,15 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1200px) {
+      color: white;
+    }
+
     &:hover > * {
       color: grey;
 
       @media (max-width: 1200px) {
-        color: black;
+        color: white;
       }
     }
 
