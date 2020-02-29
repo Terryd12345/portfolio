@@ -31,7 +31,7 @@ const Projects = () => {
           href="https://mysailboatfinder.com"
           target="__blank"
         >
-          MySailBoatFinder.com
+          <p>MySailBoatFinder.com</p>
         </a>
         <a href="https://github.com/tden123/sailboat" target="__blank">
           <FontAwesomeIcon

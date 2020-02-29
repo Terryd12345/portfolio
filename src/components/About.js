@@ -42,12 +42,12 @@ const About = () => {
           </p>
           <br />
           <p>
-            Since completing my degree, I have shifted my focus toward{" "}
-            <b>Web Development</b> as that is my true passion. I am primarily
-            focused on developing my skills in <b>HTML</b>, <b>CSS</b>,{" "}
-            <b>Javascript</b>, <b>React</b> and <b>NodeJS</b>. I have an
-            interest in everything web related from digital marketing, design,
-            product development, security to software engineering.{" "}
+            Since completing my degree, I have shifted my focus toward my true
+            passion <b>Web Development</b>. I am primarily focused on developing
+            my skills in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>,{" "}
+            <b>React</b> and <b>NodeJS</b>. I have an interest in everything web
+            related from digital marketing, design, product development,
+            security to software engineering.{" "}
             <b>
               I aspire to be as close to a "full stack" developer as possible.
             </b>

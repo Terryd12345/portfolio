@@ -10,7 +10,21 @@
   padding: 3rem;
 
   @media (max-width: 1200px) {
-    display: none;
+    position: fixed;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+
+    background-color: $color-secondary;
+    padding: 0;
+    transform: none;
+
+    height: 10rem;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   a {
@@ -27,6 +41,10 @@
 
     &:hover > * {
       color: grey;
+
+      @media (max-width: 1200px) {
+        color: black;
+      }
     }
 
     p {
