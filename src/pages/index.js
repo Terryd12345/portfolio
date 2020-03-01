@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet"
 import Home from "../components/Home"
 import About from "../components/About"
 import Projects from "../components/Projects"
-import Resume from "../components/Resume"
 import Sidebar from "../components/Sidebar"
+import Contact from "../components/Contact"
 
 export default () => (
   <React.Fragment>
@@ -15,8 +15,8 @@ export default () => (
     </Helmet>
     <Home />
     <About />
-    <Resume />
     <Projects />
+    <Contact />
     <Sidebar />
   </React.Fragment>
 )

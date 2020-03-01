@@ -88,8 +88,6 @@
       img {
         width: 100%;
         border-radius: 2px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
       }
 
       &__tabs {
@@ -98,8 +96,6 @@
         grid-template-rows: 1fr;
         align-items: center;
         text-align: center;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
 
         border-bottom: 2px solid white;
 
@@ -118,6 +114,7 @@
           height: 100%;
           background-color: $color-dark-grey;
           color: white;
+          border-radius: 0;
 
           p {
             @media (max-width: 800px) {
@@ -130,7 +127,7 @@
 
           &:hover {
             background-color: white;
-            color: white;
+            color: black;
           }
 
           &:focus {

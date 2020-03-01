@@ -29,7 +29,7 @@ const Home = () => {
       <div className="home__navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   )

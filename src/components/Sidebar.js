@@ -18,13 +18,13 @@ const Sidebar = () => {
         <FontAwesomeIcon icon={faAddressCard} />
         <p>About</p>
       </a>
-      <a href="#resume" className="sidebar__resume">
-        <FontAwesomeIcon icon={faFile} />
-        <p>Resume</p>
-      </a>
       <a href="#projects" className="sidebar__projects">
         <FontAwesomeIcon icon={faProjectDiagram} />
         <p>Projects</p>
+      </a>
+      <a href="#contact" className="sidebar__resume">
+        <FontAwesomeIcon icon={faFile} />
+        <p>Contact</p>
       </a>
     </div>
   )
