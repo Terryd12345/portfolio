@@ -17,6 +17,7 @@ export default () => (
     <About />
     <Projects />
     <Contact />
+
     <Sidebar />
   </React.Fragment>
 )
