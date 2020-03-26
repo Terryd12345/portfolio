@@ -24,14 +24,16 @@ const Projects = () => {
   }
 
   return (
-    <div id="projects" className="projects">
-      <div className="projects__mysailboatfinder">
+    <section id="projects" className="projects">
+      <article className="projects__mysailboatfinder">
         <a
           className="projects__mysailboatfinder--header"
           href="https://mysailboatfinder.com"
           target="__blank"
         >
-          <p>MySailBoatFinder.com</p>
+          <h3 className="projects__mysailboatfinder--title">
+            MySailBoatFinder.com
+          </h3>
         </a>
         <a href="https://github.com/tden123/sailboat" target="__blank">
           <FontAwesomeIcon
@@ -51,9 +53,9 @@ const Projects = () => {
         </p>
 
         <div className="projects__mysailboatfinder__features">
-          <p className="projects__mysailboatfinder__features--header">
+          <h4 className="projects__mysailboatfinder__features--header">
             Features
-          </p>
+          </h4>
           <ul className="projects__mysailboatfinder__features--list">
             <li>Messaging</li>
             <li>
@@ -107,8 +109,8 @@ const Projects = () => {
             />
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }
 

@@ -30,8 +30,8 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="contact">
-      <h2 className="contact__header">Contact</h2>
+    <section id="contact" className="contact">
+      <h3 className="contact__header">Contact</h3>
 
       <form className="contact__form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
@@ -58,7 +58,7 @@ const Contact = () => {
         <ReCaptcha sitekey={process.env.RECAPTCHA_SITE_KEY} />
         <input className="contact__form--btn" type="submit" value="Send" />
       </form>
-    </div>
+    </section>
   )
 }
 

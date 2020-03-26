@@ -9,7 +9,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <section className="sidebar">
       <a href="#home" className="sidebar__home">
         <FontAwesomeIcon icon={faHome} />
         <p>Home</p>
@@ -26,7 +26,7 @@ const Sidebar = () => {
         <FontAwesomeIcon icon={faFile} />
         <p>Contact</p>
       </a>
-    </div>
+    </section>
   )
 }
 

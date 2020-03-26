@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Home = () => {
   return (
-    <div className="home">
+    <section className="home">
       <h1 className="home__header">Terence Denning</h1>
       <h2 className="home__subheader">I build software for the web</h2>
       <div className="home__social">
@@ -31,7 +31,7 @@ const Home = () => {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
-    </div>
+    </section>
   )
 }
 
