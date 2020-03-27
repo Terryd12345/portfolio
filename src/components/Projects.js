@@ -26,21 +26,19 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <article className="projects__mysailboatfinder">
-        <a
-          className="projects__mysailboatfinder--header"
-          href="https://mysailboatfinder.com"
-          target="__blank"
-        >
-          <h3 className="projects__mysailboatfinder--title">
-            MySailBoatFinder.com
-          </h3>
-        </a>
-        <a href="https://github.com/tden123/sailboat" target="__blank">
-          <FontAwesomeIcon
-            className="projects__mysailboatfinder--github"
-            icon={faGithub}
-          />
-        </a>
+        <div className="projects__mysailboatfinder__header">
+          <a href="https://mysailboatfinder.com" target="__blank">
+            <h3 className="projects__mysailboatfinder__header--title">
+              MySailBoatFinder.com
+            </h3>
+          </a>
+          <a href="https://github.com/tden123/sailboat" target="__blank">
+            <FontAwesomeIcon
+              className="projects__mysailboatfinder__header--github"
+              icon={faGithub}
+            />
+          </a>
+        </div>
 
         <p className="projects__mysailboatfinder--description">
           MySailboatFinder.com is an online marketplace that allows users to

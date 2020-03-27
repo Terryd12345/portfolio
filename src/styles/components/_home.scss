@@ -45,7 +45,7 @@
 
   &__subheader {
     font-size: 3rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
 
     @media (max-width: 1000px) {
       font-size: 3rem;
@@ -55,6 +55,7 @@
 
   &__location {
     font-size: 2rem;
+    letter-spacing: 0.1rem;
   }
 
   &__social {
