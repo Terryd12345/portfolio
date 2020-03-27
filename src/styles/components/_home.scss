@@ -1,14 +1,8 @@
 .home {
   height: 100vh;
-  color: white;
+  color: black;
 
   position: relative;
-  z-index: 2;
-
-  background-image: linear-gradient(to bottom, rgba(#000, 0.6), rgba(#000, 0.6)),
-    url("./images/pic2.jpg");
-  background-size: cover;
-  background-position: center;
 
   &__content {
     position: absolute;
@@ -45,7 +39,7 @@
 
   &__subheader {
     font-size: 3rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
 
     @media (max-width: 1000px) {
       font-size: 3rem;
@@ -63,7 +57,7 @@
       font-size: 4rem;
       margin-right: 4rem;
       text-decoration: none;
-      color: white;
+      color: black;
       transition: all 0.6s;
 
       &:hover {
