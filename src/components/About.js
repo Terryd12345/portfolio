@@ -15,42 +15,18 @@ const About = () => {
         <h3 className="about__description--header">About Me</h3>
         <div className="about__description--content">
           <p>
-            Hello, my name is Terence. I am a <b>Software Developer</b> from
-            Melbourne, Australia. I graduated from the University of Melbourne
-            with a <b>Bachelor of Science (Computing and Software Systems)</b>.
-            During my degree I spent summers and winters working on an open
-            source application{" "}
-            <a
-              className="about__description--opendrop"
-              href="https://github.com/jdber1/opendrop"
-              target="__blank"
-            >
-              OpenDrop
-            </a>{" "}
-            for the Department of Chemical Engineering. I was also involved in
-            the <b>University of Melbourne Information Security Club</b> where I
-            volunteered as a commitee member, helping run weekly events as well
-            as developing the original club{" "}
-            <a
-              className="about__description--misc"
-              href="https://umisc.herokuapp.com"
-              target="__blank"
-            >
-              website
-            </a>
-            .
+            Hello, my name is Terence. I am a <b>Software Developer</b> from{" "}
+            <b>Melbourne, Australia</b>. I have a Bachelors degree in{" "}
+            <b>Computer Science</b> from the <b>University of Melbourne</b>. My
+            passion is building software for the web. I work primarily with{" "}
+            <b>HTML5</b>, <b>CSS3</b>, <b>Javascript</b>, <b>React</b> and{" "}
+            <b>NodeJS</b>.
           </p>
           <br />
           <p>
-            Since completing my degree, I have shifted my focus toward my true
-            passion <b>Web Development</b>. I am primarily focused on developing
-            my skills in <b>HTML</b>, <b>CSS</b>, <b>Javascript</b>,{" "}
-            <b>React</b> and <b>NodeJS</b>. I have an interest in everything web
-            related from digital marketing, design, product development,
-            security to software engineering.{" "}
-            <b>
-              I aspire to be as close to a "full stack" developer as possible.
-            </b>
+            I'm always looking to expand my skill set and work on exciting{" "}
+            <b>web related projects</b>. If you'd like to partner up on a
+            project, please get in touch.
           </p>
         </div>
       </article>
