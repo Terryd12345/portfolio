@@ -27,17 +27,17 @@ const Projects = () => {
     <section id="projects" className="projects">
       <article className="projects__mysailboatfinder">
         <div className="projects__mysailboatfinder__header">
-          <a href="https://mysailboatfinder.com" target="__blank">
-            <h3 className="projects__mysailboatfinder__header--title">
-              MySailBoatFinder.com
-            </h3>
-          </a>
-          <a href="https://github.com/tden123/sailboat" target="__blank">
-            <FontAwesomeIcon
-              className="projects__mysailboatfinder__header--github"
-              icon={faGithub}
-            />
-          </a>
+          <h3 className="projects__mysailboatfinder__header--title">
+            MySailBoatFinder.com
+          </h3>
+          <div className="projects__mysailboatfinder__header--links">
+            <a href="https://mysailboatfinder.com" target="__blank">
+              Visit site
+            </a>
+            <a href="https://github.com/tden123/sailboat" target="__blank">
+              GitHub
+            </a>
+          </div>
         </div>
 
         <p className="projects__mysailboatfinder--description">
@@ -70,7 +70,7 @@ const Projects = () => {
                 id="auth-tab"
                 onClick={() => changeTab("auth-tab", auth)}
               >
-                <p>Auth</p>
+                <p>Sign Up</p>
               </button>
               <button
                 id="messaging-tab"
@@ -82,22 +82,22 @@ const Projects = () => {
                 id="create-tab"
                 onClick={() => changeTab("create-tab", create)}
               >
-                <p>Create</p>
+                <p>Create Post</p>
               </button>
               <button id="save-tab" onClick={() => changeTab("save-tab", save)}>
-                <p>Save</p>
+                <p>Favourite Post</p>
               </button>
               <button
                 id="responsive-tab"
                 onClick={() => changeTab("responsive-tab", responsive)}
               >
-                <p>Responsive</p>
+                <p>Responsive Design</p>
               </button>
               <button
                 id="filter-tab"
                 onClick={() => changeTab("filter-tab", filter)}
               >
-                <p>Filter</p>
+                <p>Filter Items</p>
               </button>
             </div>
             <img
