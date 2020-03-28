@@ -25,7 +25,7 @@ const About = () => {
           <br />
           <p>
             I'm always looking to expand my skill set and work on exciting{" "}
-            <b>web related projects</b>. If you'd like to partner up on a
+            <b>web related projects</b>. If you'd like to collaborate on a
             project, please get in touch.
           </p>
         </div>
