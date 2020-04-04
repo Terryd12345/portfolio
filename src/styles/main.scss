@@ -3,10 +3,10 @@
 
 @import "./base/base";
 
-@import "./pages/index";
+@import "./components/navbar";
+@import "./components/project";
 
-@import "./components/home";
-@import "./components/about";
-@import "./components/projects";
-@import "./components/sidebar";
-@import "./components/contact";
+@import "./pages/home";
+@import "./pages/projects";
+@import "./pages/contact";
+@import "./pages/resume";
