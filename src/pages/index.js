@@ -13,9 +13,9 @@ export default () => (
     </Helmet>
     <section className="home">
       <div className="home__content">
-        <div className="home__content--title">
-          <h1 className="home__content--name">Terence Denning</h1>
-          <h2 className="home__content--subtitle">
+        <div className="home__content__header">
+          <h1 className="home__content__header--title">Terence Denning</h1>
+          <h2 className="home__content__header--subtitle">
             I'm a Software Developer based in Melbourne, AU
           </h2>
         </div>

@@ -20,6 +20,16 @@
     flex-direction: column;
     align-items: center;
 
+    width: 60%;
+
+    @media (max-width: 900px) {
+      width: 80%;
+    }
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+
     &__social {
       color: $color-white;
       margin: 5rem 0;
@@ -39,18 +49,29 @@
       }
     }
 
-    &--title {
-      font-size: 5rem;
-      text-align: center;
-    }
+    &__header {
+      &--title {
+        font-size: 8rem;
+        text-align: center;
+        color: $color-primary;
 
-    &--subtitle {
-      font-size: 3rem;
-      text-align: center;
-    }
+        @media (max-width: 700px) {
+          font-size: 6rem;
+        }
 
-    &--name {
-      color: $color-primary;
+        @media (max-width: 450px) {
+          font-size: 4rem;
+        }
+      }
+
+      &--subtitle {
+        font-size: 3rem;
+        text-align: center;
+
+        @media (max-width: 700px) {
+          font-size: 2rem;
+        }
+      }
     }
 
     &--btn {
@@ -60,6 +81,15 @@
       text-decoration: none;
 
       width: 30%;
+
+      @media (max-width: 1400px) {
+        width: 50%;
+      }
+
+      @media (max-width: 800px) {
+        width: 70%;
+      }
+
       padding: 1.5rem 2rem;
       margin: 0.5rem auto;
 
