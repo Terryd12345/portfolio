@@ -9,11 +9,74 @@
     border-left: 1px solid $color-faded-grey;
     height: 100vh;
     width: calc(100vw - 10rem);
+
+    @media (max-width: 1450px) {
+      left: 5rem;
+    }
   }
 
   &__content {
     position: absolute;
     top: 15rem;
     margin-left: 15rem;
+
+    @media (max-width: 1450px) {
+      margin-left: 10rem;
+    }
+
+    @media (max-width: 1050px) {
+      top: 10rem;
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 350px) {
+      margin-left: 1rem;
+    }
+  }
+
+  &--title {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+      font-size: 1.5rem;
+    }
+
+    & > input {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      width: 60rem;
+    }
+
+    & > textarea {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      width: 60rem;
+      height: 30rem;
+    }
+
+    &--recaptcha {
+      margin: 2rem 0;
+    }
+
+    &--btn {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      background-color: $color-black;
+      padding: 3rem 0;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-black;
+        background-color: $color-primary;
+      }
+    }
   }
 }

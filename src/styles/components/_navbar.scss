@@ -2,12 +2,16 @@
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 5rem;
+  height: 8rem;
   border-bottom: 1px solid $color-faded-grey;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 1450px) {
+    height: 5rem;
+  }
 
   &--item {
     color: $color-white;

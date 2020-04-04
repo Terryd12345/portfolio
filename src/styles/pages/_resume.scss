@@ -9,12 +9,24 @@
     border-left: 1px solid $color-faded-grey;
     height: 100vh;
     width: calc(100vw - 10rem);
+
+    @media (max-width: 1450px) {
+      left: 5rem;
+    }
   }
 
   &__content {
     position: absolute;
     top: 15rem;
     margin-left: 15rem;
+
+    @media (max-width: 1450px) {
+      margin-left: 10rem;
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 5rem;
+    }
   }
 
   &--title {
@@ -58,6 +70,10 @@
     left: 2rem;
     top: -2rem;
     width: 30rem;
+
+    @media (max-width: 400px) {
+      width: 20rem;
+    }
 
     &--title {
       font-size: 1.8rem;

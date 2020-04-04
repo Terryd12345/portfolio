@@ -36,7 +36,7 @@ const Contact = () => {
       <section id="contact" className="contact">
         <div className="contact__box">
           <div className="contact__content">
-            <h3 className="contact__header">Contact</h3>
+            <h3 className="contact--title">Contact</h3>
 
             <form className="contact__form" onSubmit={sendEmail}>
               <input type="hidden" name="contact_number" />
@@ -47,7 +47,7 @@ const Contact = () => {
                 type="text"
                 name="user_name"
               />
-              <label htmlFor="user_emaile">Email</label>
+              <label htmlFor="user_email">Email</label>
               <input
                 value={input.email}
                 onChange={e => setInput({ ...input, email: e.target.value })}
@@ -60,7 +60,11 @@ const Contact = () => {
                 onChange={e => setInput({ ...input, message: e.target.value })}
                 name="message"
               />
-              <ReCaptcha sitekey={process.env.RECAPTCHA_SITE_KEY} />
+              <ReCaptcha
+                className="contact__form--recaptcha"
+                sitekey={process.env.RECAPTCHA_SITE_KEY}
+              />
+
               <input
                 className="contact__form--btn"
                 type="submit"
