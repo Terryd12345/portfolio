@@ -11,10 +11,20 @@ const Project = props => {
         <p className="project__content--description">{description}</p>
         <p className="project__content--tech">{tech}</p>
         <div className="project__links">
-          <a href={siteLink} target="_blank" className="project__links--link">
+          <a
+            href={siteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__links--link"
+          >
             Visit Site
           </a>
-          <a href={githubLink} target="_blank" className="project__links--link">
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__links--link"
+          >
             Github
           </a>
         </div>

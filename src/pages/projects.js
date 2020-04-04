@@ -10,7 +10,7 @@ export const Projects = () => {
       <div className="projects">
         <div className="projects__box">
           <div className="projects__content">
-            <h1 className="projects__content--title">My Projects</h1>
+            <h1 className="projects--title">My Projects</h1>
             <Project
               img={Pic1}
               title={"MySailboatFinder.com"}

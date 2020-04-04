@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
@@ -41,12 +42,17 @@ export default () => (
             />
           </a>
         </div>
-        <a href="/projects" className="home__content--btn">
-          Projects
-        </a>
-        <a href="/resume" className="home__content--btn">
-          Resume
-        </a>
+        <div className="home__navigation">
+          <Link to="/projects" className="home__content--btn">
+            Projects
+          </Link>
+          <Link to="/resume" className="home__content--btn">
+            Resume
+          </Link>
+          <Link to="/contact" className="home__content--btn">
+            Contact
+          </Link>
+        </div>
       </div>
       <div className="home__line home__line--1"></div>
       <div className="home__line home__line--2"></div>
