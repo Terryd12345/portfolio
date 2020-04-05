@@ -18,9 +18,14 @@
     text-decoration: none;
     cursor: pointer;
     z-index: 2;
+    font-size: 1.3rem;
 
     &:first-child {
-      margin-left: 15rem;
+      margin-left: 12rem;
+
+      @media (max-width: 1000px) {
+        margin-left: 5rem;
+      }
     }
 
     &:not(:last-child) {

@@ -55,12 +55,8 @@
         text-align: center;
         color: $color-primary;
 
-        @media (max-width: 700px) {
-          font-size: 6rem;
-        }
-
         @media (max-width: 450px) {
-          font-size: 4rem;
+          font-size: 5.5rem;
         }
       }
 

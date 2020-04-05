@@ -13,24 +13,20 @@
     @media (max-width: 1450px) {
       left: 5rem;
     }
+
+    @media (max-width: 1000px) {
+      border-left: none;
+      left: 1rem;
+    }
   }
 
   &__content {
     position: absolute;
     top: 15rem;
-    margin-left: 15rem;
+    margin-left: 10rem;
 
-    @media (max-width: 1450px) {
-      margin-left: 10rem;
-    }
-
-    @media (max-width: 1050px) {
-      top: 10rem;
-      margin-left: 2rem;
-    }
-
-    @media (max-width: 350px) {
-      margin-left: 1rem;
+    @media (max-width: 800px) {
+      margin-left: 5rem;
     }
   }
 
