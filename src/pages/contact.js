@@ -17,7 +17,7 @@ const Contact = () => {
         e.preventDefault()
 
         emailjs
-            .sendForm("gmail", "portfolio", e.target, process.env.EMAILJS_USER_ID)
+            .sendForm("gmail", "portfolio", e.target, process.env.GATSBY_EMAILJS_USER_ID)
             .then(
                 result => {
                     console.log(result.text)
@@ -66,7 +66,7 @@ const Contact = () => {
                             />
                             <ReCaptcha
                                 className="contact__form--recaptcha"
-                                sitekey={process.env.RECAPTCHA_SITE_KEY}
+                                sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
                             />
 
                             <button
