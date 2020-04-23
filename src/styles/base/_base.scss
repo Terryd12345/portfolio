@@ -10,18 +10,8 @@ html {
   font-size: 62.5%;
   font-family: $main-font;
   scroll-behavior: smooth;
-
-  @media (max-width: 1400px) {
-    font-size: 50%;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 40%;
-  }
 }
 
 body {
-  max-width: 1366px;
-  margin: 0 auto;
   min-height: 100vh;
 }

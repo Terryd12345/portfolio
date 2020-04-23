@@ -1,39 +1,72 @@
 .home {
+  position: relative;
   height: 100vh;
-  width: 100%;
-  padding: 0 15rem;
-  padding-top: 30rem;
-
-  background-image: linear-gradient(to bottom, rgba(#000, 0.7), rgba(#000, 0.7)),
-    url("./images/pc.jpg");
+  width: 100vw;
+  background-image: linear-gradient(to right, rgba(#000, .9), rgba(#000, .9)), url("./images/clem-onojeghuo-Ud4GcZW3rOY-unsplash.jpg");
   background-size: cover;
 
-  color: $color-white;
+  &__content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
-  &__title {
-    font-size: 7rem;
+    & > h2 {
+      font-size: 8rem;
+    }
+
+    & > h3 {
+      font-size: 4rem;
+      margin-top: 1rem;
+    }
+    
   }
 
-  &__subtitle {
-    font-size: 4rem;
-  }
-
-  &__social {
+  &__navigation {
     margin-top: 5rem;
+    position: relative;
+    height: 100px;
 
-    & > a > svg {
-      font-size: 5rem;
+    & > a {
       text-decoration: none;
-      color: $color-white;
-      transition: all 0.4s;
-
-      &:first-child {
-        margin-right: 2rem;
-      }
+      color: white;
+      font-size: 2rem;
+      transition: all .2s;
+      padding-bottom: 1rem;
+      border: 1px solid transparent;
 
       &:hover {
-        transform: scale(1.3);
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        padding-bottom: 1rem;
       }
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__contact {
+    margin: 0 auto;
+    font-size: 2rem;
+    border: 2px solid $color-primary;
+    text-decoration: none;
+    color: $color-primary;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 2rem;
+    width: 50%;
+    cursor: pointer;
+    letter-spacing: .2rem; 
+    transition: all .8s;
+
+    &:hover {
+      color: white;
+      background-color: $color-primary;
+      letter-spacing: 1rem; 
     }
   }
 }

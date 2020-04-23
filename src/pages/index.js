@@ -1,18 +1,26 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import Navbar from "../components/Navbar"
-import Home from "../components/Home"
-import Projects from "../components/Projects"
+import React from "react";
+import { Link } from 'gatsby';
 
 export default () => (
-  <React.Fragment>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Terence Denning</title>
-      <link rel="canonical" href="http://mysite.com/example" />
-    </Helmet>
-    <Navbar />
-    <Home />
-    <Projects />
-  </React.Fragment>
+
+  <div className="home">
+    <div className="home__content">
+      <h2>Software Developer</h2>
+      <h3>Melbourne, AU</h3>
+      <div className="home__navigation">
+        <Link to="/projects">Projects</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+
+      <Link to='/contact'>
+        <button className="home__contact">
+          HIRE ME
+      </button>
+      </Link>
+
+    </div>
+  </div>
+
 )
+
