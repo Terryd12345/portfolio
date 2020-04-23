@@ -1,32 +1,56 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Project = props => {
-  const { img, title, tech, description, siteLink, githubLink } = props
+  const { title, description, webLink, githubLink, img, logos } = props
+
+  const displayLogos = () => {
+    if (!logos) return
+    return logos.map(logo => {
+      console.log(logo)
+      return (
+        <FontAwesomeIcon
+          key={logo.iconName}
+          icon={logo}
+          className="project__content__builtwith--logo"
+        />
+      )
+    })
+  }
 
   return (
     <div className="project">
-      <img className="project--img" src={img} alt="project" />
+      <div className="project__img">
+        <img src={img} alt="project" />
+      </div>
       <div className="project__content">
-        <h2 className="project__content--title">{title}</h2>
+        <h3 className="project__content--title">{title}</h3>
         <p className="project__content--description">{description}</p>
-        <p className="project__content--tech">{tech}</p>
-        <div className="project__links">
-          <a
-            href={siteLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project__links--link"
-          >
-            Visit Site
-          </a>
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project__links--link"
-          >
-            Github
-          </a>
+        <div className="project__content__builtwith">
+          <h3 className="project__content__builtwith--title">Built with</h3>
+          {displayLogos()}
+        </div>
+        <div className="project__content__links">
+          <div className="project__content__links--link">
+            <a
+              href={webLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__content--visit"
+            >
+              Visit
+            </a>
+          </div>
+          <div className="project__content__links--link">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__content--github"
+            >
+              Github
+            </a>
+          </div>
         </div>
       </div>
     </div>

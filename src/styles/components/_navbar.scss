@@ -1,35 +1,45 @@
 .navbar {
   position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 8rem;
-  border-bottom: 1px solid $color-faded-grey;
+  background-color: transparent;
+  margin-top: 5rem;
+  max-width: 1366px;
+  width: 100%;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 
-  @media (max-width: 1450px) {
-    height: 5rem;
+  &__item {
+    text-decoration: none;
+    color: white;
+
+    margin: 0 2rem;
+
+    &:not(:first-child) {
+      margin-right: 15rem;
+    }
   }
 
-  &--item {
-    color: $color-white;
+  &__logo {
+    position: absolute;
+    left: 15rem;
+    font-size: 2rem;
+    margin-right: auto;
     text-decoration: none;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 1.3rem;
 
-    &:first-child {
-      margin-left: 12rem;
-
-      @media (max-width: 1000px) {
-        margin-left: 5rem;
-      }
+    & > a {
+      text-decoration: none;
     }
+  }
 
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
+  &__nav {
+    position: absolute;
+    right: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: white;
   }
 }

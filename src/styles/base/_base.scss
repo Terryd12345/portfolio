@@ -21,6 +21,7 @@ html {
 }
 
 body {
-  background-color: $color-black;
-  color: $color-white;
+  max-width: 1366px;
+  margin: 0 auto;
+  min-height: 100vh;
 }

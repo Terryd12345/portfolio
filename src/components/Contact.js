@@ -32,7 +32,6 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
       <section id="contact" className="contact">
         <div className="contact__box">
           <div className="contact__content">

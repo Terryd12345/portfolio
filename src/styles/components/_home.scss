@@ -1,0 +1,39 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  padding: 0 15rem;
+  padding-top: 30rem;
+
+  background-image: linear-gradient(to bottom, rgba(#000, 0.7), rgba(#000, 0.7)),
+    url("./images/pc.jpg");
+  background-size: cover;
+
+  color: $color-white;
+
+  &__title {
+    font-size: 7rem;
+  }
+
+  &__subtitle {
+    font-size: 4rem;
+  }
+
+  &__social {
+    margin-top: 5rem;
+
+    & > a > svg {
+      font-size: 5rem;
+      text-decoration: none;
+      color: $color-white;
+      transition: all 0.4s;
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
