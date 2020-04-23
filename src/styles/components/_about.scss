@@ -1,13 +1,18 @@
 .about {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 
     &__content {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (max-width: 600px){
+            top: 20%;
+            left: 40%;
+        }
     }
 
     &__title {
@@ -15,6 +20,6 @@
     }
 
     &__paragraph {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
