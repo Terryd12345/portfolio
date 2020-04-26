@@ -7,8 +7,25 @@
     }
     100% {
         width: 0px;
-    }
+    }   
 }
+
+@keyframes changePageVertical {
+    0% {
+        height: 100vh;
+        width: 100vw;
+        transform: translateY(100vh);
+    }
+    50% {
+        transform: translateY(0vh);
+    }
+    100% {
+        width: 100vw;
+        transform: translateY(100vh);
+    }   
+}
+
+
 
 .splashnav {
     position: fixed;
@@ -16,5 +33,11 @@
     height: 100vh;
     background-color: $color-green;
     animation: changePage 1.6s linear;
+
+    @media (max-width: 600px){
+        animation: changePageVertical 1.6s linear;
+    }
+
     z-index: 10;
 }
+

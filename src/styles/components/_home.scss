@@ -15,12 +15,15 @@
     & h2 {
       font-size: 10rem;
       color: $color-white;
+      position: relative;
+      top: -2rem;
     }
 
     & p {
       color: $color-white;
       font-size: 2rem;
       margin: 5rem 0;
+      margin-bottom: 6rem;
     }
 
     & button {
