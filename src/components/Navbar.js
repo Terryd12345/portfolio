@@ -1,21 +1,35 @@
-import React from "react"
+import React, { useState } from "react"
 
 const Navbar = () => {
 
   const pages = ['home', 'about', 'projects', 'contact'];
+  const [pageChanging, setPageChanging] = useState(false);
 
   const handleNavigation = (page) => {
-    pages.forEach(e => {
-      if( e !== page ){
-        let hidePage = document.getElementById(e);
-        hidePage.style.visibility = 'hidden';
-      } 
-    });
-    let showPage = document.getElementById(page);
-    showPage.style.visibility = 'visible';
+    if( !pageChanging ) {
 
-    let splashnav = document.getElementById('splashnav');
-    splashnav.classList.toggle('splashnav');
+      let splashnav = document.getElementById('splashnav');
+      
+      splashnav.classList.add('splashnav');
+
+      setPageChanging(true);
+      setTimeout(() => {
+        pages.forEach(e => {
+          if( e !== page ){
+            let hidePage = document.getElementById(e);
+            hidePage.style.visibility = 'hidden';
+          } 
+        });
+        let showPage = document.getElementById(page);
+        showPage.style.visibility = 'visible';
+      }, 800);
+
+      setTimeout(() => {
+        splashnav.classList.remove('splashnav');
+      }, 1600);
+      setPageChanging(false);
+
+    }
     
   }
 

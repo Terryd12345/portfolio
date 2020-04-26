@@ -1,7 +1,7 @@
 @keyframes changePage {
     0% {
-        width: 0px;
-    } 
+        width: 14px;
+    }
     50% {
         width: 100vw;
     }
@@ -15,6 +15,6 @@
     left: 0px;
     height: 100vh;
     background-color: $color-green;
-    animation: changePage 1.2s linear;
+    animation: changePage 1.6s linear;
     z-index: 10;
 }
