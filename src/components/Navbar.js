@@ -26,9 +26,9 @@ const Navbar = () => {
 
       setTimeout(() => {
         splashnav.classList.remove('splashnav');
+        setPageChanging(false);
       }, 1600);
-      setPageChanging(false);
-
+      
     }
     
   }
