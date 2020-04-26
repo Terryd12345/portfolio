@@ -1,11 +1,8 @@
-#contact {
-    position: relative;
-    min-height: 100vh;
-}
-
 .contact {
-    position: relative;
-    min-height: 100vh;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
   
     &__content {
       position: absolute;
@@ -37,8 +34,9 @@
         border: .3rem solid $color-green;
         color: $color-green;
         background-color: transparent;
-        padding: 2rem 4rem;
-        font-size: 3rem;
+        margin-top: 2rem;
+        padding: 3rem 6rem;
+        font-size: 4rem;
         font-weight: 600;
       }
     }

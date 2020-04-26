@@ -1,10 +1,6 @@
 import React, { useState } from "react"
 import emailjs from "emailjs-com"
 import ReCaptcha from "react-google-recaptcha"
-import Navbar from "../components/Navbar"
-import Watermark from "./Watermark"
-
-
 
 const Contact = () => {
 
@@ -37,8 +33,6 @@ const Contact = () => {
 
     return ( 
         <section id="contact" className="contact">
-            <Navbar />
-            <Watermark />
             <div className="contact__content">
                 <h2 className="contact--title">Contact</h2>
 

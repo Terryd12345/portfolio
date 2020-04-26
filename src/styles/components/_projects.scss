@@ -1,4 +1,32 @@
 .projects {
-    position: relative;
-    min-height: 100vh;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    visibility: hidden;
+
+    &__content {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        border-left: 1.4rem solid $color-green;
+        padding-left: 10%;
+        max-width: 90%;
+
+        & h2 {
+            font-size: 10rem;
+            color: $color-white;
+            margin-bottom: 5rem;
+        }
+    
+        & p {
+            color: $color-white;
+            font-size: 2rem;
+            margin: 5rem 0;
+        }
+    }
+
+    &__projects {
+        display: flex;
+        flex-direction: row;
+    }
 }

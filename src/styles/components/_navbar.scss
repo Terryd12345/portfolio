@@ -1,17 +1,19 @@
 .navbar {
     width: 78%;
-    position: absolute;
+    position: fixed;
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 
     display: flex;
 
     &__logo {
         margin-right: auto;
-        & a {
+        & div {
             color: $color-white;
             text-decoration: none;
+            cursor: pointer;
             
             & h1 {
                 font-size: 2rem;
@@ -20,15 +22,16 @@
     }
 
     &__nav {
-        & > a {
-
+        display: flex;
+        flex-direction: row;
+        & > div {
             &:not(:last-child) {
                 margin-right: 6rem;
-            }
-            
+            }         
             color: $color-white;
             text-decoration: none;
             font-size: 2rem;
+            cursor: pointer;
         }
     }
 }

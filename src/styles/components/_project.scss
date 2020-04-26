@@ -1,0 +1,20 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-right: 5rem;
+    
+
+    &__title {
+        color: $color-white;
+        font-size: 5rem;
+        margin-top: 2rem;
+    }
+    &__description {}
+    &__image {
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
