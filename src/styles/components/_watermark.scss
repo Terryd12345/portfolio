@@ -1,0 +1,16 @@
+.watermark {
+    width: 95%;
+
+    position: absolute;
+    opacity: 1%;
+    top: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    & > p {
+        font-size: 22rem;
+        color: white;
+    }
+}

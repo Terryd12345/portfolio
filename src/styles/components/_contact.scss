@@ -1,74 +1,70 @@
+#contact {
+    position: relative;
+    min-height: 100vh;
+}
+
 .contact {
     position: relative;
     min-height: 100vh;
-    width: 100vw;
-
-    &--title {
-        font-size: 8rem;
-        margin-bottom: 5rem;
-    }
-
-    &__box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40%;
-
-        @media (max-width: 1000px) {
-            width: 60%;
-        }
-
-        @media (max-width: 500px) {
-            width: 80%;
-        }
-
-        @media (max-width: 480px) {
-            width: 95%;
-        }
-    }
-
+  
     &__content {
-        display: flex;
-        flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translateY(-50%);
+      border-left: 1.4rem solid $color-green;
+      padding-left: 10%;
+      min-width: 90rem;
+
+      @media (max-width: 1000px){
+          min-width: auto;
+          width: 90%;
+      }
+  
+      & h2 {
+        font-size: 10rem;
+        color: $color-white;
+        margin-bottom: 2rem;
+      }
+  
+      & p {
+        color: $color-white;
+        font-size: 2rem;
+        margin: 5rem 0;
+      }
+  
+      & button {
+        border: .3rem solid $color-green;
+        color: $color-green;
+        background-color: transparent;
+        padding: 2rem 4rem;
+        font-size: 3rem;
+        font-weight: 600;
+      }
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        
 
         & > label {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            color: $color-white;
+            font-size: 1.8rem;
         }
 
-        & > input {
+        & > input{
             margin-bottom: 2rem;
             padding: 1rem 2rem;
-        }
+        } 
 
-        & > textarea {
+        & textarea {
             padding: 2rem;
-            height: 20rem;
+            min-height: 20rem;
         }
 
         &--recaptcha {
             margin: 2rem 0;
         }
-
-        &--btn {
-            background-color: transparent;
-            border: 1px solid $color-primary;
-            color: $color-primary;
-            padding: 2rem 4rem;
-            cursor: pointer;
-            font-size: 2rem;
-
-            &:hover {
-                background-color: $color-primary;
-                color: white;
-            }
-        }
     }
-}
+  
+  }

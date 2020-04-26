@@ -1,15 +1,15 @@
 import React from "react"
 import Navbar from "../components/Navbar"
+import Watermark from "./Watermark"
 
 
 const Projects = () => {
     return (
-        <>
+        <div id="projects" className="projects">
             <Navbar />
-            <div className="projects">
-                projects
-        </div>
-        </>
+            <Watermark />
+            projects
+        </div> 
     )
 }
 
