@@ -1,7 +1,9 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle, faProjectDiagram, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
 
+const MobileNav = () => {
   const pages = ['home', 'about', 'projects', 'contact'];
   const [pageChanging, setPageChanging] = useState(false);
 
@@ -33,27 +35,30 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar">
-      <div className="navbar__logo">
+    <div className="mobilenav">
         <div 
-          onClick={() => handleNavigation('home')}
+            className="mobilenav__about"
+            onClick={ () => handleNavigation('about') }
         >
-          <h1>Terence Denning</h1>
+            <FontAwesomeIcon icon={ faUserCircle } />
+            <p>About</p>
         </div>
-      </div>
-      <div className="navbar__nav">
-      <div 
-        onClick={() => handleNavigation('about')}
-      >about</div>
         <div 
-          onClick={() => handleNavigation('projects')}
-        >projects</div>
+            className="mobilenav__projects"
+            onClick={ () => handleNavigation('projects') }
+        >
+            <FontAwesomeIcon icon={ faProjectDiagram } />
+            <p>Projects</p>
+        </div>
         <div 
-          onClick={() => handleNavigation('contact')}
-        >contact</div>
-      </div>
+            className="mobilenav__contact"
+            onClick={ () => handleNavigation('contact') }
+        >
+            <FontAwesomeIcon icon={ faPhone } />
+            <p>Contact</p>
+        </div>
     </div>
   )
 }
 
-export default Navbar
+export default MobileNav;

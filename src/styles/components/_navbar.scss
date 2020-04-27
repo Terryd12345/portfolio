@@ -18,15 +18,24 @@
             & h1 {
                 font-size: 2rem;
             }
-        }   
+        }  
     }
 
     &__nav {
         display: flex;
         flex-direction: row;
+
+        @media(max-width: 500px){
+            visibility: hidden;
+        }
+
         & > div {
             &:not(:last-child) {
                 margin-right: 6rem;
+
+                @media (max-width: 700px){
+                    margin-right: 2rem;
+                }
             }         
             color: $color-white;
             text-decoration: none;

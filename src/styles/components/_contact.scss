@@ -1,7 +1,7 @@
 .contact {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 90%;
     visibility: hidden;
   
     &__content {
@@ -16,6 +16,11 @@
       @media (max-width: 1000px){
           min-width: auto;
           width: 90%;
+      }
+
+      @media (max-width: 500px){
+        min-width: auto;
+        width: 100%;
       }
   
       & h2 {
@@ -40,6 +45,18 @@
         padding: 3rem 6rem;
         font-size: 4rem;
         font-weight: 600;
+        cursor: pointer;
+        transition: all .6s;
+
+        &:focus {
+          outline: 1px solid $color-green;
+        }
+  
+        &:hover {
+          background-color: $color-green;
+          color: $color-black;
+          transform: scale(1.1);
+        }
       }
     }
 

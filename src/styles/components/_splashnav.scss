@@ -34,7 +34,7 @@
     background-color: $color-green;
     animation: changePage 1.6s linear;
 
-    @media (max-width: 600px){
+    @media (max-width: 1000px){
         animation: changePageVertical 1.6s linear;
     }
 
