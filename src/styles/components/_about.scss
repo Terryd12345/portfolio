@@ -4,11 +4,12 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
     padding: 0 5rem;
-    padding-top: 10rem;
+    min-height: 100vh;
 
    &--title {
        grid-column: 1 / span 2;
        font-size: 4rem;
+       align-self: flex-end;
        margin-bottom: 4rem;
    }
 
@@ -23,7 +24,7 @@
 
    &--plants-img {
        position: absolute;
-       top: 7rem;
+       top: 25%;
        left: 7rem;
        width: 45rem;
        z-index: -1;

@@ -1,7 +1,9 @@
 .services {
     position: relative;
+    bottom: -8rem;
     width: 100%;
     padding: 0 5rem;
+    min-height: 100vh;
     
     &::after {
         content: "";
@@ -19,8 +21,8 @@
     &__content {
         display: grid;
         grid-template-columns: 40% 1fr;
-        gap: 6rem;
-        padding: 20% 0;
+        gap: 4rem;
+        padding: 30% 0;
     }
 
     &__header {
@@ -49,14 +51,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all .4s;
             text-decoration: none;
             cursor: pointer;
 
             &:hover {
                 background-color: $pale-blue;
                 color: white;
-                transform: scale(1.03);
             }
         }
     }

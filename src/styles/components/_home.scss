@@ -29,12 +29,10 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
-                transition: all .4s;
 
                 &:hover {
                     background-color: $orange;
                     color: white;
-                    transform: scale(1.05);
                 }
             }
 
@@ -46,12 +44,10 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
-                transition: all .4s;
 
                 &:hover {
                     background-color: $pale-blue;
                     color: white;
-                    transform: scale(1.05);
                 }
             }
         }

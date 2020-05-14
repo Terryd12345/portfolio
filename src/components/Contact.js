@@ -8,7 +8,17 @@ const Contact = () => {
         name: "",
         email: "",
         message: "",
+        recaptcha: false
     })
+
+    function canSubmit() {
+        let { name, email, message, recaptcha } = input;
+        if( name.length > 0 && email.length > 0 && message.length > 0 && recaptcha ){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     function sendEmail(e) {
         e.preventDefault()
@@ -61,13 +71,23 @@ const Contact = () => {
                     <ReCaptcha
                         className="contact__form--recaptcha"
                         sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
+                        onChange={() => setInput({...input, recaptcha: true})}
                     />
 
-                    <button
+                    { canSubmit() ? (
+                        <button
                         className="contact__form--btn"
                         type="submit"
-
                     >Send</button>
+                    ) : (
+                        <button
+                        className="contact__form--btn contact__form--disabled"
+                        type="submit"
+                        disabled
+                    >Please fill out the form</button>
+                    ) }
+
+                    
                 </form>
             </div>            
         </section>
