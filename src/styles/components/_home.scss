@@ -29,7 +29,15 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
+                transition: all .4s;
+
+                &:hover {
+                    background-color: $orange;
+                    color: white;
+                    transform: scale(1.05);
+                }
             }
+
             &--services {
                 border: 1px solid $pale-blue;
                 color: $pale-blue;
@@ -38,6 +46,13 @@
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
+                transition: all .4s;
+
+                &:hover {
+                    background-color: $pale-blue;
+                    color: white;
+                    transform: scale(1.05);
+                }
             }
         }
     }

@@ -11,9 +11,9 @@ const Services = () => (
                     Services
                 </h2>
                 <p className="services__header--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus maiores corrupti? Accusamus nisi nulla est nobis quis temporibus necessitatibus, culpa veniam ab reprehenderit repudiandae tempore rerum consequuntur. Repellendus, illum.</p>
-                <div className="services__header--quote">
+                <a href="#contact" className="services__header--quote">
                     Get a Quote
-                </div>
+                </a>
             </div>
             <div className="services__services">
                 <div className="services__services--item">

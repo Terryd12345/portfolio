@@ -52,10 +52,17 @@
       color: $orange;
       border-radius: .7rem;
       cursor: pointer;
+      transition: all .4s;
 
       &:hover {
         background-color: $orange;
         color: white;
+        transform: scale(1.015);
+      }
+
+      &:focus {
+        border: 1px solid $orange;
+        outline: none;
       }
     }
 

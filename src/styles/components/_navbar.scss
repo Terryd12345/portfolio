@@ -17,6 +17,13 @@
     & > a {
       text-decoration: none;
       color: inherit;
+      border-bottom: 1px solid transparent;
+      padding-bottom: .3rem;
+
+      &:hover {
+        color: $orange;
+        border-bottom: 1px solid $orange;
+      }
     }
   }
 
@@ -25,6 +32,13 @@
         margin-right: 2rem;
         text-decoration: none;
         color: inherit;
+        border-bottom: 1px solid transparent;
+        padding-bottom: .3rem;
+
+        &:hover {
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
     }
   }
 
