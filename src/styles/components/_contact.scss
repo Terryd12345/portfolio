@@ -1,3 +1,64 @@
 .contact {
   height: 100vh;
+  padding: 0 5rem;
+
+  &__content {
+    padding-top: 10rem;
+  }
+
+  &--title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    & > input {
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      border-radius: .7rem;
+      border: 1px solid lightgray;
+
+      &:focus {
+        border: 1px solid $orange;
+        outline: none;
+      }
+    }
+
+    & > textarea {
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      border-radius: .7rem;
+      border: 1px solid lightgray;
+      height: 20rem;
+
+      &:focus {
+        border: 1px solid $orange;
+        outline: none;
+      }
+    }
+
+    & > label {
+      margin-bottom: 1rem;
+    }
+
+    &--btn {
+      padding: 2rem 4rem;
+      background-color: transparent;
+      margin-top: 2rem;
+      border: 1px solid $orange;
+      color: $orange;
+      border-radius: .7rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $orange;
+        color: white;
+      }
+    }
+
+  }
+  
 }

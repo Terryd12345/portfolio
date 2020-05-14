@@ -10,12 +10,12 @@ const Home = () => {
                     Website troubles? You're in the right place!
                 </h1>
                 <div className="home__content__cta">
-                    <div className="home__content__cta--chat">
+                    <a href="#contact" className="home__content__cta--chat">
                         Let's Chat
-                    </div>
-                    <div className="home__content__cta--services">
+                    </a>
+                    <a href="#services" className="home__content__cta--services">
                         My Services
-                    </div>
+                    </a>
                 </div>     
             </div>
             <img className="home__img" src={profileImg} alt="homepage svg"/>
