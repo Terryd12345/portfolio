@@ -1,45 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
+import profileImg from '../styles/images/homepage-svg.svg';
 
 const Home = () => {
-    const pages = ['home', 'about', 'projects', 'contact'];
-  const [pageChanging, setPageChanging] = useState(false);
-
-  const handleNavigation = (page) => {
-    if( !pageChanging ) {
-
-      let splashnav = document.getElementById('splashnav');
-      
-      splashnav.classList.add('splashnav');
-
-      setPageChanging(true);
-
-      setTimeout(() => {
-        pages.forEach(e => {
-          if( e !== page ){
-            let hidePage = document.getElementById(e);
-            hidePage.style.visibility = 'hidden';
-          } 
-        });
-        let showPage = document.getElementById(page);
-        showPage.style.visibility = 'visible';
-      }, 800);
-
-      setTimeout(() => {
-        splashnav.classList.remove('splashnav');
-        setPageChanging(false);
-      }, 1600);
-      
-    } 
-  }
+    
     return (
         <section id="home" className="home">
             <div className="home__content">
-                <h2>Software Developer</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas optio nostrum explicabo commodi molestias modi perspiciatis fuga veniam illo provident.</p>
-                <button
-                    onClick={() => handleNavigation('contact')}
-                >Let's Chat</button>
+                <h1 className="home__content--title">
+                    Website troubles? You're in the right place!
+                </h1>
+                <div className="home__content__cta">
+                    <div className="home__content__cta--chat">
+                        Let's Chat
+                    </div>
+                    <div className="home__content__cta--services">
+                        My Services
+                    </div>
+                </div>     
             </div>
+            <img className="home__img" src={profileImg} alt="homepage svg"/>
         </section>
     )
 }

@@ -1,5 +1,6 @@
 @import "./base/colors";
 @import "./base/typeography";
+@import './base/variables';
 
 @import "./base/base";
 
@@ -10,6 +11,4 @@
 @import "./components/project";
 @import "./components/contact";
 @import "./components/about";
-@import "./components/watermark";
-@import "./components/splashnav";
-@import "./components/mobilenav";
+@import './components/services';

@@ -1,58 +1,25 @@
-import React, { useState } from "react"
+import React from "react"
 
 const Navbar = () => {
 
-  const pages = ['home', 'about', 'projects', 'contact'];
-  const [pageChanging, setPageChanging] = useState(false);
-
-  const handleNavigation = (page) => {
-    if( !pageChanging ) {
-
-      let splashnav = document.getElementById('splashnav');
-      
-      splashnav.classList.add('splashnav');
-
-      setPageChanging(true);
-      setTimeout(() => {
-        pages.forEach(e => {
-          if( e !== page ){
-            let hidePage = document.getElementById(e);
-            hidePage.style.visibility = 'hidden';
-          } 
-        });
-        let showPage = document.getElementById(page);
-        showPage.style.visibility = 'visible';
-      }, 800);
-
-      setTimeout(() => {
-        splashnav.classList.remove('splashnav');
-        setPageChanging(false);
-      }, 1600);
-      
-    } 
-  }
-
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar__logo">
-        <div 
-          onClick={() => handleNavigation('home')}
-        >
-          <h1>Terence Denning</h1>
-        </div>
+        <a href="#home">
+          Terence Denning
+        </a>
       </div>
       <div className="navbar__nav">
-      <div 
-        onClick={() => handleNavigation('about')}
-      >about</div>
-        <div 
-          onClick={() => handleNavigation('projects')}
-        >projects</div>
-        <div 
-          onClick={() => handleNavigation('contact')}
-        >contact</div>
+        <a href="#services" className="navbar__nav--item">Services</a>
+        <a href="#projects" className="navbar__nav--item">Projects</a>
+        <a href="#about" className="navbar__nav--item">About</a>
       </div>
-    </div>
+      <div className="navbar__contact">
+        <a href="#contact">
+          Contact
+        </a>
+      </div>
+    </nav>
   )
 }
 

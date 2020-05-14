@@ -1,0 +1,75 @@
+.services {
+    position: relative;
+    width: 100%;
+    
+    &::after {
+        content: "";
+        background-image: url('./images/about.jpg');
+        background-size: cover;
+        opacity: .1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 6rem;
+        padding: 20% 0;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        & > * {
+            margin-bottom: 3rem;
+        }
+
+        &--title {
+            font-size: 4rem;
+        }
+
+        &--description {
+            font-size: 1.5rem;
+        }
+
+        &--quote {
+            padding: 2rem 4rem;
+            border: 1px solid $pale-blue;
+            color: $pale-blue;
+            border-radius: .7rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5rem;
+
+        &--item {
+            & > h3 {
+                font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+            & > p {
+
+            }
+            & > svg {
+                font-size: 4rem;
+                color: $orange;
+            }
+        }
+    }
+
+}
