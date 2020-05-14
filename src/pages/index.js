@@ -4,6 +4,7 @@ import Services from "../components/Services"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 import Navbar from "../components/Navbar"
+import About from "../components/About"
 
 export default () => {
 
@@ -13,6 +14,7 @@ export default () => {
       <Home />
       <Services />
       <Projects />
+      <About />
       <Contact />
     </main>
   );
