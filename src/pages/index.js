@@ -6,7 +6,7 @@ import Contact from "../components/Contact"
 import Navbar from "../components/Navbar"
 import About from "../components/About"
 import Footer from "../components/Footer"
-import WhyMe from "../components/Whyme"
+import WhyMe from "../components/WhyMe"
 import { Helmet } from "react-helmet"
 
 export default () => {
