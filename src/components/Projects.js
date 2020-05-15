@@ -1,7 +1,7 @@
 import React from "react"
 import homeImg from '../styles/images/Scene-Home.svg'
 import Project from './Project';
-import AboutImg from '../styles/images/about.jpg';
+import SailboatImg from '../styles/images/sailboat.png';
 import OpendropImg from '../styles/images/opendrop.png'
 import MiscImg from '../styles/images/misc.png'
 import WpFilterImg from '../styles/images/wpfilter.png'
@@ -36,6 +36,12 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius tempore dolore si
                     title={"MISC"} 
                     githubLink={"https://github.com/tden123/misc2"} 
                     description={"This was the original University of Melbourne Information Security Club website and was developed in order to increase brand recognition and link to social media accounts"} 
+                />
+                <Project 
+                    img={SailboatImg}
+                    title={"MySailboatFinder"}
+                    githubLink={"https://github.com/tden123/sailboat"}
+                    description={"MySailboatFinder was a proof of concept for an idea I had about creating an online trading platform for sailboats"}
                 />
             </div>
         </section> 
