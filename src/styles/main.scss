@@ -4,6 +4,8 @@
 
 @import "./base/base";
 
+@import './utilities/headings';
+
 @import "./components/app";
 @import "./components/navbar";
 @import "./components/home";
@@ -13,3 +15,4 @@
 @import "./components/about";
 @import './components/services';
 @import './components/footer';
+@import './components/whyme';

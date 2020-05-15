@@ -44,7 +44,7 @@ const Contact = () => {
     return ( 
         <section id="contact" className="contact">
             <div className="contact__content">
-                <h2 className="contact--title">Contact</h2>
+                <h2 className="contact--title section-header">Contact</h2>
 
                 <form className="contact__form" onSubmit={sendEmail}>
                     <input type="hidden" name="contact_number" />

@@ -7,7 +7,7 @@ const Home = () => {
         <section id="home" className="home">
             <div className="home__content">
                 <h1 className="home__content--title">
-                    Website troubles? You're in the right place!
+                    Your Friendly Neighbourhood <strike>Spiderman</strike> Web Developer
                 </h1>
                 <div className="home__content__cta">
                     <a href="#contact" className="home__content__cta--chat">

@@ -4,9 +4,16 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 const Project = (props) => {
-    const { img, title, description, githubLink } = props;
+    const { img, title, description, githubLink, technologies } = props;
+
+    function displayTechnologies() {
+        return technologies.map(tech => {
+            return <span>{tech}</span>
+        })
+    }
+
     return (
-        <div className='project'> 
+        <article className='project'> 
             <div className="project__overlay">
                 <div className="project__overlay__icons">
                     <a 
@@ -17,11 +24,14 @@ const Project = (props) => {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>  
                 </div>    
+                <div className="project__overlay__tech">
+                    { displayTechnologies() }
+                </div>
             </div>
             <img class="project--img" src={img} alt="project"/>
             <h3 className="project--title">{title}</h3>
             <p className="project--description">{description}</p>
-        </div>
+        </article>
     )
 }
 

@@ -1,12 +1,10 @@
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 5rem;
+    position: relative;
     padding-top: 30%;
     min-height: 100vh;
 
     &__content {
-       
+       width: 40%;
         &--title {
             font-size: 4rem;
             margin-top: 5rem;
@@ -54,7 +52,11 @@
     }
 
     &__img {
-        width: 100%;
+        width: 50%;
         margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        z-index: -5;
     }
 }

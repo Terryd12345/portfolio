@@ -1,0 +1,14 @@
+.whyme {
+    padding: 20rem 0;
+
+    &--title {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    &--description {
+        font-size: 1.5rem;
+        color: $grey-text;
+        line-height: 1.8;
+    }
+}

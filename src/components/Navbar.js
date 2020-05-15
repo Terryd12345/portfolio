@@ -10,6 +10,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar__nav">
+      <a href="#whyme" className="navbar__nav--item">Why Me</a>
         <a href="#services" className="navbar__nav--item">Services</a>
         <a href="#projects" className="navbar__nav--item">Projects</a>
         <a href="#about" className="navbar__nav--item">About</a>

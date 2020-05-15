@@ -7,9 +7,11 @@ const Services = () => (
     <section id="services" className="services">
         <div className="services__content">
             <div className="services__header">
-                <h2 className="services__header--title">
-                    Services
-                </h2>
+                <div>
+                    <h2 className="services__header--title section-header">
+                        Services
+                    </h2>
+                </div>   
                 <p className="services__header--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus maiores corrupti? Accusamus nisi nulla est nobis quis temporibus necessitatibus, culpa veniam ab reprehenderit repudiandae tempore rerum consequuntur. Repellendus, illum.</p>
                 <a href="#contact" className="services__header--quote">
                     Get a Quote
