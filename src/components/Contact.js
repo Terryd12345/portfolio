@@ -84,7 +84,7 @@ const Contact = () => {
                         className="contact__form--btn contact__form--disabled"
                         type="submit"
                         disabled
-                    >Please fill out the form</button>
+                    >Complete Form</button>
                     ) }
 
                     

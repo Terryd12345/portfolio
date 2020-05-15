@@ -4,19 +4,6 @@
     width: 100%;
     padding: 0 5rem;
     min-height: 100vh;
-    
-    &::after {
-        content: "";
-        background-image: url('./images/about.jpg');
-        background-size: cover;
-        opacity: .1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-    }
 
     &__content {
         display: grid;
@@ -28,11 +15,8 @@
     &__header {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 80%;
-
-        & > * {
-            margin-bottom: 4rem;
-        }
 
         &--title {
             font-size: 4rem;
@@ -40,6 +24,8 @@
 
         &--description {
             font-size: 1.5rem;
+            color: $grey-text;
+            line-height: 1.8;
         }
 
         &--quote {
@@ -73,7 +59,9 @@
                 margin: 1.5rem 0;
             }
             & > p {
-
+                color: $grey-text;
+                line-height: 1.5;
+                font-size: 1.2rem;
             }
             & > svg {
                 font-size: 4rem;

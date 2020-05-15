@@ -1,21 +1,63 @@
 .project {
    position: relative;
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   box-shadow: .2rem .2rem .8rem #d6d6d6;
+   transition: all .4s;
 
    &--title {
-    position: absolute;
-    top: 25%;
-    left: 2rem;
-    font-size: 3rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: auto;
    }
 
    &--description {
-
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    color: $grey-text;
+    line-height: 1.5;
+    font-size: 1.2rem;
    }
 
    &--img {
-       width: 100%;
+    width: 100%;
+    margin: auto;
    }
+
+   &__overlay {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       background-image: linear-gradient(to top, rgba($orange, 1), rgba($orange, .7));
+       opacity: 0;
+       transition: all .7s;
+
+       &__icons {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           font-size: 4rem;
+
+           & > a {
+               z-index: 2;
+               color: white;
+               text-decoration: none;
+           }
+       }
+   }
+
+   &:hover &__overlay {
+       opacity: 1;
+       z-index: 1;
+   }
+
+   &:hover {
+       transform: translateY(-.4rem);
+       box-shadow: .4rem .4rem 1rem #d6d6d6;
+   }
+      
 }
