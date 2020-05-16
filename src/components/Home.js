@@ -42,7 +42,7 @@ const Home = () => {
                             shape: {
                                 type: 'circle',
                                 stroke: {
-                                    width: 10,
+                                    width: 3,
                                     color: '#FF9B21'
                                 }
                             },
