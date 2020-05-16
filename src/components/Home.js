@@ -19,26 +19,25 @@ const Home = () => {
                     </a>
                 </div>     
             </div>
-            <Particles 
-              params={{
-            		particles: {
-                        number: {
-                            value: 50,
-                            density: {
-                                enable: true,
-                                value_area: 1200
-                            }
-                        },
-            			line_linked: {
-            				shadow: {
-            					enable: true,
-            					color: "#FF9B21",
-            					blur: 1
-            				}
-            			}
-            		}
-            	}}
-            />
+            { window.screen.width > 600 ? (
+                <Particles 
+                params={{
+                      particles: {
+                          number: {
+                              value: 50
+                          },
+                          line_linked: {
+                              shadow: {
+                                  enable: true,
+                                  color: "#FF9B21",
+                                  blur: 1
+                              }
+                          }
+                      }
+                  }}
+              />
+            ) : (<></>) }
+            
         </section>
     )
 }
