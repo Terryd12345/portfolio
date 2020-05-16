@@ -1,13 +1,14 @@
 import React from 'react'
-import profileImg from '../styles/images/homepage-svg.svg';
+import Particles from 'react-particles-js'
 
 const Home = () => {
     
     return (
         <section id="home" className="home">
             <div className="home__content">
-                <h1 className="home__content--title">
-                    Your Friendly Neighbourhood <strike>Spiderman</strike> Web Developer
+                <h1 className="home__content__header">
+                    <span className="home__content__header--title">Software Developer</span>
+                    <span className="home__content__header--subtitle">Melbourne, AU</span>
                 </h1>
                 <div className="home__content__cta">
                     <a href="#contact" className="home__content__cta--chat">
@@ -18,7 +19,19 @@ const Home = () => {
                     </a>
                 </div>     
             </div>
-            <img className="home__img" src={profileImg} alt="homepage svg"/>
+            <Particles 
+              params={{
+            		particles: {
+            			line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "#FF9B21",
+            					blur: 3
+            				}
+            			}
+            		}
+            	}}
+            />
         </section>
     )
 }

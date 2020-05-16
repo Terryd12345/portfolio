@@ -4,11 +4,17 @@
     min-height: 100vh;
 
     &__content {
-       width: 40%;
-        &--title {
-            font-size: 4rem;
-            margin-top: 5rem;
+
+        &__header {
+            &--title {
+                font-size: 8rem;
+                display: block;
+            }
+            &--subtitle {
+                font-size: 4rem;
+            }
         }
+        
         &__cta {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -17,7 +23,6 @@
 
             margin-top: 5rem;
             font-size: 1.5rem;
-            width: 80%;
 
             &--chat {
                 border: 2px solid $orange;
@@ -51,12 +56,13 @@
         }
     }
 
-    &__img {
-        width: 50%;
-        margin: 0 auto;
-        position: absolute;
-        right: 0;
-        top: 25%;
-        z-index: -5;
-    }
+}
+
+#tsparticles {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
