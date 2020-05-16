@@ -19,11 +19,54 @@ const Home = () => {
                     </a>
                 </div>     
             </div>
-            <Particles 
+            { window.innerWidth > 600 ? (
+                <Particles 
+                params={{
+                      particles: {
+                          number: {
+                              value: 10,
+                              density: {
+                                  enable: true,
+                                  value_area: 1000
+                              }
+                          },
+                          line_linked: {
+                              shadow: {
+                                  enable: true,
+                                  color: "#FF9B21",
+                                  blur: 1
+                              }
+                          },
+                          shape: {
+                              type: 'circle',
+                              stroke: {
+                                  width: 10,
+                                  color: '#FF9B21'
+                              }
+                          },
+                          move: {
+                              enable: true,
+                              speed: 4,
+                              direction: 'none',
+                              random: false,
+                              straight: false,
+                              out_mode: 'out',
+                              bounce: false,
+                              attract: {
+                                  enable: false,
+                                  rotateX: 0,
+                                  rotateY: 0
+                              }
+                          }
+                      }
+                  }}
+              />
+            ) : (
+                <Particles 
               params={{
             		particles: {
                         number: {
-                            value: 10,
+                            value: 2,
                             density: {
                                 enable: true,
                                 value_area: 1000
@@ -60,6 +103,8 @@ const Home = () => {
             		}
             	}}
             />
+            )}
+            
         </section>
     )
 }
