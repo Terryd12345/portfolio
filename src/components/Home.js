@@ -1,5 +1,4 @@
 import React from 'react'
-import Particles from 'react-particles-js'
 
 const Home = () => {
     
@@ -19,24 +18,6 @@ const Home = () => {
                     </a>
                 </div>     
             </div>
-            { window.screen.width > 600 ? (
-                <Particles 
-                params={{
-                      particles: {
-                          number: {
-                              value: 50
-                          },
-                          line_linked: {
-                              shadow: {
-                                  enable: true,
-                                  color: "#FF9B21",
-                                  blur: 1
-                              }
-                          }
-                      }
-                  }}
-              />
-            ) : (<></>) }
             
         </section>
     )
