@@ -8,6 +8,11 @@
         grid-template-columns: 40% 1fr;
         gap: 4rem;
         padding: 20rem 0;
+
+        @media (max-width: 600px){
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__header {
@@ -41,6 +46,22 @@
                 background-color: $pale-blue;
                 color: white;
             }
+        }
+
+        @media (max-width: 600px) {
+
+            &--title {
+                margin-bottom: 4rem;
+            }
+            
+            &--description {
+                display: none;
+            }
+
+            &--quote {
+                display: none;
+            }
+            
         }
     }
 

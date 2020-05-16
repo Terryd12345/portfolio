@@ -5,6 +5,7 @@
     column-gap: 4rem;
     min-height: 100vh;
 
+
    &--title {
        grid-column: 1 / span 2;
        font-size: 4rem;
@@ -21,6 +22,10 @@
    &--img {
        width: 100%;
        border-radius: .7rem;
+
+       @media (max-width: 600px){
+           visibility: hidden;
+       }
    }
 
    &--plants-img {

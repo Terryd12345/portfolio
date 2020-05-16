@@ -10,9 +10,15 @@ html {
   font-size: 62.5%;
   font-family: $main-font;
   scroll-behavior: smooth;
+
+  @media (max-width: 600px){
+    font-size: 50%;
+  }
+
 }
 
 body {
   min-height: 100vh;
   font-family: $main-font;
+  padding: 0 5rem;
 }
