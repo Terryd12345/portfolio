@@ -21,4 +21,8 @@ body {
   min-height: 100vh;
   font-family: $main-font;
   padding: 0 5rem;
+
+  @media (max-width: 600px){
+    padding: 0 2rem;
+  }
 }
