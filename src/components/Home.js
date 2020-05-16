@@ -22,11 +22,18 @@ const Home = () => {
             <Particles 
               params={{
             		particles: {
+                        number: {
+                            value: 25,
+                            density: {
+                                enable: true,
+                                value_area: 500
+                            }
+                        },
             			line_linked: {
             				shadow: {
             					enable: true,
             					color: "#FF9B21",
-            					blur: 3
+            					blur: .5
             				}
             			}
             		}

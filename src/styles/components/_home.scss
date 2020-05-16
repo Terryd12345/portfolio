@@ -1,6 +1,6 @@
 .home {
     position: relative;
-    padding-top: 30%;
+    padding-top: 40%;
     min-height: 100vh;
 
     &__content {
@@ -20,6 +20,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             height: 5rem;
+            width: 60%;
 
             margin-top: 5rem;
             font-size: 1.5rem;
