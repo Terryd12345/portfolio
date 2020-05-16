@@ -1,9 +1,11 @@
 .home {
     position: relative;
-    padding-top: 40%;
     min-height: 100vh;
 
     &__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
 
         &__header {
             &--title {
