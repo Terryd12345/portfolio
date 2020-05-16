@@ -1,8 +1,11 @@
 import React from 'react'
 import Particles from 'react-particles-js'
+import windowSize from '../hooks/windowSize'
 
 const Home = () => {
     
+    const { width } = windowSize();
+
     return (
         <section id="home" className="home">
             <div className="home__content">
@@ -19,7 +22,7 @@ const Home = () => {
                     </a>
                 </div>     
             </div>
-            { window.innerWidth > 600 ? (
+            { width > 600 ? (
                 <Particles 
                 params={{
                       particles: {
