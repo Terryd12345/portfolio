@@ -5,6 +5,10 @@
     column-gap: 4rem;
     min-height: 100vh;
 
+    @media (max-width: 600px){
+        grid-template-columns: 1fr;
+    }
+
 
    &--title {
        grid-column: 1 / span 2;
@@ -24,7 +28,7 @@
        border-radius: .7rem;
 
        @media (max-width: 600px){
-           visibility: hidden;
+           display: none;
        }
    }
 
@@ -32,7 +36,12 @@
        position: absolute;
        top: 25%;
        left: 7rem;
-       width: 45rem;
+       width: 50%;
        z-index: -1;
+
+       @media (max-width: 600px){
+           display: none;
+       }
+
    }
 }

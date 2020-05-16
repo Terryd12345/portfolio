@@ -4,6 +4,10 @@
     padding-top: 8rem;
     row-gap: 5rem;
 
+    @media( max-width: 500px ){
+        grid-template-columns: 1fr;
+    }
+
     &__header {
         &--title {
             margin-top: 8rem;
@@ -20,6 +24,10 @@
 
     &__img {
         width: 100%;
+
+        @media( max-width: 500px ){
+            display: none;
+        }
     }
 
     &__project-list {
@@ -28,8 +36,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
-        @media (max-width: 600px){
+        @media (max-width: 800px){
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 450px){
+            grid-template-columns: 1fr;
+            max-width: 90%;
         }
     }
 }

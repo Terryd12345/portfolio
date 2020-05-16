@@ -17,7 +17,8 @@ const Projects = () => {
                 </div>
                 
                 <p className="projects__header--description">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius tempore dolore sint, reprehenderit id vitae deserunt ex, distinctio, impedit natus repellendus. Voluptatem temporibus, nemo porro eaque ad cupiditate ea aut?                </p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius tempore dolore sint, reprehenderit id vitae deserunt ex, distinctio, impedit natus repellendus. Voluptatem temporibus, nemo porro eaque ad cupiditate ea aut?
+                </p>
             </div>
             <img className="projects__img" src={homeImg} alt=""/>
 
