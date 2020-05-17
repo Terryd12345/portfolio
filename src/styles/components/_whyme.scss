@@ -2,6 +2,13 @@
     position: relative;
     padding: 20rem 0;
     max-width: 90vw;
+    min-height: 100vh;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     &--title {
         font-size: 4rem;

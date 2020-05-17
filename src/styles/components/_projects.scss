@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding-top: 8rem;
     row-gap: 5rem;
+    min-height: 100vh;
 
     @media( max-width: 500px ){
         grid-template-columns: 1fr;
