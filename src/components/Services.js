@@ -12,7 +12,9 @@ const Services = () => (
                         Services
                     </h2>
                 </div>   
-                <p className="services__header--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus maiores corrupti? Accusamus nisi nulla est nobis quis temporibus necessitatibus, culpa veniam ab reprehenderit repudiandae tempore rerum consequuntur. Repellendus, illum.</p>
+                <p className="services__header--description">
+                    I am primarily a web developer with experience developing custom web applications from scratch. I also have worked within the WordPress ecosystem as well as the Shopify ecosystem and am able to provide custom solutions for both platforms.
+                </p>
                 <a href="#contact" className="services__header--quote">
                     Get a Quote
                 </a>
@@ -21,22 +23,42 @@ const Services = () => (
                 <div className="services__services--item">
                     <FontAwesomeIcon icon={faTv} />
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odio architecto deserunt atque est, consectetur placeat reprehenderit aliquid dolore possimus illum eveniet maxime dolorum iste perferendis voluptatum ratione voluptates ad?</p>
+                    <ul>
+                        <li>HTML &amp; CSS</li>
+                        <li>Sass</li>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                    </ul>
                 </div>
                 <div className="services__services--item">
                 <FontAwesomeIcon icon={faWordpress} />
                     <h3>Wordpress</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odio architecto deserunt atque est, consectetur placeat reprehenderit aliquid dolore possimus illum eveniet maxime dolorum iste perferendis voluptatum ratione voluptates ad?</p>
+                    <ul>
+                        <li>Theme Customization</li>
+                        <li>Plugin Development</li>
+                        <li>Security</li>
+                        <li>SEO</li>
+                    </ul>
                 </div>
                 <div className="services__services--item">
                 <FontAwesomeIcon icon={faShopify} />
-                    <h3>Ecommerce</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odio architecto deserunt atque est, consectetur placeat reprehenderit aliquid dolore possimus illum eveniet maxime dolorum iste perferendis voluptatum ratione voluptates ad?</p>
+                    <h3>Shopify</h3>
+                    <ul>
+                        <li>Store Setup</li>
+                        <li>Liquid Development</li>
+                        <li>App Development</li>
+                        <li>Theme Customization</li>
+                    </ul>
                 </div>
                 <div className="services__services--item">
                 <FontAwesomeIcon icon={faExclamationTriangle} />
                     <h3>Trouble Shooting</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum odio architecto deserunt atque est, consectetur placeat reprehenderit aliquid dolore possimus illum eveniet maxime dolorum iste perferendis voluptatum ratione voluptates ad?</p>
+                    <ul>
+                        <li>Fixing Bugs</li>
+                        <li>Uncovering Problems</li>
+                        <li>Securing Sites</li>
+                        <li>Consultations</li>
+                    </ul>
                 </div>
             </div>
         </div>

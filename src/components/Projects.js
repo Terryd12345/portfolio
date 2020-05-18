@@ -17,7 +17,7 @@ const Projects = () => {
                 </div>
                 
                 <p className="projects__header--description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius tempore dolore sint, reprehenderit id vitae deserunt ex, distinctio, impedit natus repellendus. Voluptatem temporibus, nemo porro eaque ad cupiditate ea aut?
+                    Below is a list of different projects I have worked on. I have worked with a number of different technologies and frameworks. With a fundamental understanding of how technology works under the hood, I am able to quickly adapt to any unfamiliar technology or platform.
                 </p>
             </div>
             <img className="projects__img" src={homeImg} alt=""/>
