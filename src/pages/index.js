@@ -9,24 +9,25 @@ import Footer from "../components/Footer"
 import WhyMe from "../components/WhyMe"
 import { Helmet } from "react-helmet"
 
-export default () => {
 
+
+export default () => {
   return (
-    <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Terence Denning</title>
-    </Helmet>
-    <main className="app">
-      <Navbar />
-      <Home />
-      <WhyMe />
-      <Services />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </main>
+    <>  
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Terence Denning</title>
+      </Helmet>
+      <main className="app">
+        <Navbar />
+        <Home />
+        <WhyMe />
+        <Services />
+        <Projects />
+        <About />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 };
