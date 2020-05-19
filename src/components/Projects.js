@@ -29,7 +29,7 @@ const Projects = () => {
                     siteLink={"https://joss.theoj.org/papers/81c283e1b9af1d3d0db6b2da1d60855e"}
                     githubLink={"https://github.com/jdber1/opendrop"}
                     technologies={['Python','OpenCV', 'PyGTK']}
-                    description={"Opendrop is an opensource pendant drop tensiometry software that is used by researchers to determine the interfacial surface tension of various liquids"} 
+                    description={"Opendrop is an opensource pendant drop tensiometry software that is used by researchers to measure interfacial surface tension"} 
                 />
                 <Project 
                     img={WpFilterImg} 
