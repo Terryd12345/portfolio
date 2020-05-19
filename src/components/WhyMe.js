@@ -6,7 +6,7 @@ const WhyMe = () => {
             <div className="whyme__content">
                 <h3 className="whyme--title section-header">How I Work</h3>
                 <p className="whyme--description">
-                    My philosophy when it comes to software is that great software products are fundamentally about <b>solving problems</b>. There is no one size fits all when it comes to software as different technologies are designed to solve different problems. <b>Trying to force a technology to fit a solution that it is not designed for can lead to serious problems</b>. Being able to understand the <b>tradeoffs</b> between these technologies and understanding which technology to use is crucial to the success of a project.
+                    My philosophy when it comes to software is that great software products are fundamentally about <b>solving problems</b>. There is no one size fits all when it comes to software as different technologies are designed to solve different problems. <b>Trying to force a technology to fit a solution that it is not designed for can lead to poor performance and an overall bad experience for the user</b>. Being able to understand the <b>tradeoffs</b> between these technologies and understanding which technology to use is crucial to the success of a project.
                 </p>
                 <br/>
                 <p className="whyme--description">
