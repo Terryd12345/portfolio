@@ -42,7 +42,7 @@ const Projects = () => {
                 <Project 
                     img={SailboatImg}
                     title={"MySailboatFinder"}
-                    siteLink={"http://mysailboatfinder.com"}
+                    siteLink={"https://www.mysailboatfinder.com"}
                     githubLink={"https://github.com/tden123/sailboat"}
                     technologies={['React', 'Redux', 'ExpressJS', 'Sass']}
                     description={"MySailboatFinder was a proof of concept for an idea I had about creating an online trading platform for new and used sailboats"}
