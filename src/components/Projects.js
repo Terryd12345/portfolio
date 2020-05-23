@@ -45,7 +45,7 @@ const Projects = () => {
                     siteLink={"https://www.mysailboatfinder.com"}
                     githubLink={"https://github.com/tden123/sailboat"}
                     technologies={['React', 'Redux', 'ExpressJS', 'Sass']}
-                    description={"MySailboatFinder was a proof of concept for an idea I had about creating an online trading platform for new and used sailboats"}
+                    description={"MySailboatFinder was a proof of concept for an online trading platform for sailboats"}
                 />
                 
                 <Project 
