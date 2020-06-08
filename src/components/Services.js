@@ -13,7 +13,7 @@ const Services = () => (
                     </h2>
                 </div>   
                 <p className="services__header--description">
-                    I am primarily a web developer with experience developing custom web applications from scratch. I also have worked within the WordPress ecosystem as well as the Shopify ecosystem and am able to provide custom solutions for both platforms.
+                    I am a Software Developer with experience developing custom web applications. I have worked within the WordPress ecosystem as well as the Shopify ecosystem and am able to provide custom solutions for both platforms.
                 </p>
                 <a href="#contact" className="services__header--quote">
                     Get a Quote
