@@ -16,6 +16,8 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Terence Denning</title>
+        <link rel="canonical" href="https://terencedenning.com"/>
+        <meta name="description" content="Software Developer from Melbourne, Australia" />
       </Helmet>
       <main className="app">
         <Navbar />
