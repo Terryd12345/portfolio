@@ -9,7 +9,8 @@ const Contact = () => {
         email: "",
         message: "",
         recaptcha: false
-    })
+    });
+    const [sending, isSending] = useState(false);
 
     function canSubmit() {
         let { name, email, message, recaptcha } = input;
@@ -20,26 +21,31 @@ const Contact = () => {
         }
     }
 
-    function sendEmail(e) {
+    async function sendEmail(e) {
         e.preventDefault()
 
-        emailjs
+        isSending(true);
+
+        await emailjs
             .sendForm("gmail", "portfolio", e.target, process.env.GATSBY_EMAILJS_USER_ID)
             .then(
                 result => {
-                    console.log(result.text)
                     setInput({
                         name: "",
                         email: "",
                         message: "",
-                    })
+                        recaptcha: false
+                    });
+                    isSending(false);
                 },
                 error => {
                     console.log(error.text)
+                    isSending(false);
                 }
             )
+                
+        
     }
-
 
     return ( 
         <section id="contact" className="contact">
@@ -78,7 +84,7 @@ const Contact = () => {
                         <button
                         className="contact__form--btn"
                         type="submit"
-                    >Send</button>
+                    >{ sending ? <p>Sending...</p> : <p>Send</p> }</button>
                     ) : (
                         <button
                         className="contact__form--btn contact__form--disabled"
