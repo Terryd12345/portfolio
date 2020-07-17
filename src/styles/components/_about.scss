@@ -32,17 +32,4 @@
            display: none;
        }
    }
-
-   &--plants-img {
-       position: absolute;
-       top: 25%;
-       left: 7rem;
-       width: 50%;
-       z-index: -1;
-
-       @media (max-width: 600px){
-           display: none;
-       }
-
-   }
 }
