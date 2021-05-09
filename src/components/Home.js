@@ -16,8 +16,8 @@ const Home = () => {
                     <a href="#contact" className="home__content__cta--chat">
                         Let's Chat
                     </a>
-                    <a href="#services" className="home__content__cta--services">
-                        My Services
+                    <a href="#projects" className="home__content__cta--services">
+                        My Work
                     </a>
                 </div>     
             </div>
