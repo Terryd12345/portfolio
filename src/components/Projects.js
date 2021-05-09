@@ -38,16 +38,7 @@ const Projects = () => {
                     siteLink={"https://butchersstore.com.au/delivery/"} 
                     technologies={['PHP','WordPress', 'Javascript']}
                     description={"Postcode Filter is a custom WordPress plugin that was developed for a client that required the ability to aggregate a large number of delivery locations based upon post code inputs"} 
-                />
-                <Project 
-                    img={SailboatImg}
-                    title={"MySailboatFinder"}
-                    siteLink={"https://www.mysailboatfinder.com"}
-                    githubLink={"https://github.com/tden123/sailboat"}
-                    technologies={['React', 'Redux', 'ExpressJS', 'Sass']}
-                    description={"MySailboatFinder was a proof of concept for an online trading platform for sailboats"}
-                />
-                
+                />                
                 <Project 
                     img={MiscImg} 
                     title={"MISC"} 

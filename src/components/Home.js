@@ -10,7 +10,7 @@ const Home = () => {
             <div className="home__content">
                 <h1 className="home__content__header">
                     <span className="home__content__header--title">Software Developer</span>
-                    <span className="home__content__header--subtitle">Melbourne, AU</span>
+                    <span className="home__content__header--subtitle">Sydney, AU</span>
                 </h1>
                 <div className="home__content__cta">
                     <a href="#contact" className="home__content__cta--chat">
