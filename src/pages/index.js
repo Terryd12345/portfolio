@@ -21,7 +21,6 @@ export default () => {
       <main className="app">
         <Navbar />
         <Home />
-        <Services />
         <Projects />
         <About />
         <Footer />
