@@ -24,14 +24,6 @@ const Projects = () => {
 
             <div className="projects__project-list">
                 <Project 
-                    img={OpendropImg} 
-                    title={"OpenDrop"} 
-                    siteLink={"https://joss.theoj.org/papers/81c283e1b9af1d3d0db6b2da1d60855e"}
-                    githubLink={"https://github.com/jdber1/opendrop"}
-                    technologies={['Python','OpenCV', 'PyGTK']}
-                    description={"Opendrop is an opensource pendant drop tensiometry software that is used by researchers to measure interfacial surface tension"} 
-                />
-                <Project 
                     img={WpFilterImg} 
                     title={"Postcode Filter"} 
                     githubLink={"https://github.com/tden123/postcode-delivery-options"}
@@ -39,24 +31,6 @@ const Projects = () => {
                     technologies={['PHP','WordPress', 'Javascript']}
                     description={"Postcode Filter is a custom WordPress plugin that was developed for a client that required the ability to aggregate a large number of delivery locations based upon post code inputs"} 
                 />
-                <Project 
-                    img={SailboatImg}
-                    title={"MySailboatFinder"}
-                    siteLink={"https://www.mysailboatfinder.com"}
-                    githubLink={"https://github.com/tden123/sailboat"}
-                    technologies={['React', 'Redux', 'ExpressJS', 'Sass']}
-                    description={"MySailboatFinder was a proof of concept for an online trading platform for sailboats"}
-                />
-                
-                <Project 
-                    img={MiscImg} 
-                    title={"MISC"} 
-                    githubLink={"https://github.com/tden123/misc2"} 
-                    siteLink={"http://umisc.herokuapp.com/"}
-                    technologies={['Ruby On Rails','MySQL', 'Heroku', 'MaterializeCSS']}
-                    description={"This was the original University of Melbourne Information Security Club website and was developed in order to increase brand awareness and link to social media accounts"} 
-                />
-                
             </div>
         </section> 
     )

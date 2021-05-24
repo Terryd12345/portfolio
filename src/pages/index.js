@@ -25,7 +25,6 @@ export default () => {
         <Services />
         <Projects />
         <About />
-        <Contact />
         <Footer />
       </main>
     </>
